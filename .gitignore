@@ -1,0 +1,5 @@
+.jekyll-cache
+.sass-cache
+.tweet-cache
+.venv
+.DS_Store
