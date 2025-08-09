@@ -4,14 +4,7 @@ title: Home
 permalink: /
 ---
 
-# **Neural Differential Equations for Time Series**
-
----
-## Organizer
-
-- [Dr. YongKyung Oh](https://yongkyung-oh.github.io/), Postdoctoral Researcher at the University of California, Los Angeles (UCLA) Health - David Geffen School of Medicine, contributing to the Medical & Imaging Informatics (MII) group led by Dr. Alex Bui.
-- [Prof. Dong-Young Lim](https://sites.google.com/view/dlim/), Assistant professor in the Department of Industrial Engineering and the Artificial Intelligence Graduate School at the Ulsan National Institute of Science and Technology (UNIST).
-- [Prof. Sungil Kim](https://analytics.unist.ac.kr/), Associate Professor in the Department of Industrial Engineering and the Artificial Intelligence Graduate School at the Ulsan National Institute of Science and Technology (UNIST).
+# **[CIKM2025] Neural Differential Equations for Continuous-Time Analysis**
 
 ---
 
@@ -89,6 +82,14 @@ By the end of this resource, you will:
 - **[Code Repositories](/publications/)**  
 - **[Tutorials](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**  
 - **[Slides & Figures](#)**
+
+---
+
+## Organizer
+
+- [Dr. YongKyung Oh](https://yongkyung-oh.github.io/), Postdoctoral Researcher at the University of California, Los Angeles (UCLA) Health - David Geffen School of Medicine, contributing to the Medical & Imaging Informatics (MII) group led by Dr. Alex Bui.
+- [Prof. Dong-Young Lim](https://sites.google.com/view/dlim/), Assistant professor in the Department of Industrial Engineering and the Artificial Intelligence Graduate School at the Ulsan National Institute of Science and Technology (UNIST).
+- [Prof. Sungil Kim](https://analytics.unist.ac.kr/), Associate Professor in the Department of Industrial Engineering and the Artificial Intelligence Graduate School at the Ulsan National Institute of Science and Technology (UNIST).
 
 ---
 
