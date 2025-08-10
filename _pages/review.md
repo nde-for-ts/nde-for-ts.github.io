@@ -3,8 +3,6 @@ layout: about
 permalink: /
 title: Review
 description: 
-nav: true
-nav_order: 1
 
 ---
 

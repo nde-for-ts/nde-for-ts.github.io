@@ -100,7 +100,7 @@
 
           <!-- About -->
           <li class="nav-item active">
-            <a class="nav-link" href="/">Tutorial
+            <a class="nav-link" href="/">Review
               
                 <span class="sr-only">(current)</span>
               
@@ -138,7 +138,7 @@
               
                 
                 <li class="nav-item ">
-                  <a class="nav-link" href="/review/">Review
+                  <a class="nav-link" href="/tutorial/">Tutorial
                     
                   </a>
                 </li>
@@ -149,7 +149,7 @@
               
                 
                 <li class="nav-item ">
-                  <a class="nav-link" href="/publications/">Foundational Papers
+                  <a class="nav-link" href="/papers/">Papers
                     
                   </a>
                 </li>
@@ -210,115 +210,38 @@
     
 
     <div class="clearfix">
-<h1 id="cikm2025-neural-differential-equations-for-continuous-time-analysis"><strong>[CIKM2025] Neural Differential Equations for Continuous-Time Analysis</strong></h1>
+<h1 id="ijcai2025-comprehensive-review-of-neural-differential-equations-for-time-series-analysis"><strong>[IJCAI2025] Comprehensive Review of Neural Differential Equations for Time Series Analysis</strong></h1>
 
 <hr>
 
 <h2 id="overview">Overview</h2>
 
-<p>Modeling complex, irregular time series is a critical challenge in knowledge discovery and data mining. This tutorial introduces Neural Differential Equations (NDEs)—a powerful paradigm for continuous-time deep learning that intrinsically handles the non-uniform sampling and missing values where traditional models falter. We provide a comprehensive review of the theory and practical application of the entire NDE family: Neural Ordinary (NODEs), Controlled (NCDEs), and Stochastic (NSDEs) Differential Equations. The tutorial emphasizes robustness and stability and culminates in a hands-on session where participants will use key open-source libraries to solve real-world tasks like interpolation and classification. Designed for AI researchers and practitioners, this tutorial equips attendees with essential tools for time series analysis.</p>
+<p>Time series modeling and analysis have become critical in various domains. Conventional methods such as RNNs and Transformers, while effective for discrete-time and regularly sampled data, face significant challenges in capturing the continuous dynamics and irregular sampling patterns inherent in real-world scenarios. Neural Differential Equations (NDEs) represent a paradigm shift by combining the flexibility of neural networks with the mathematical rigor of differential equations. This paper presents a comprehensive review of NDE-based methods for time series analysis, including neural ordinary differential equations, neural controlled differential equations, and neural stochastic differential equations. We provide a detailed discussion of their mathematical formulations, numerical methods, and applications, highlighting their ability to model continuous-time dynamics. Furthermore, we address key challenges and future research directions. This survey serves as a foundation for researchers and practitioners seeking to leverage NDEs for advanced time series analysis.</p>
 
-<p><strong>Neural Differential Equations (NDEs)</strong> provide a principled way to model these signals in continuous time, enabling:</p>
+<p>This survey provides a comprehensive review of NDE-based methods for time series analysis, covering the three core families:</p>
 <ul>
-  <li>Flexible handling of non-uniform sampling and missingness.</li>
-  <li>Rich latent dynamics modeling beyond discrete-step RNNs and Transformers.</li>
-  <li>Integration of domain knowledge through the structure of differential equations.</li>
+  <li><strong>Neural Ordinary Differential Equations (NODEs)</strong></li>
+  <li><strong>Neural Controlled Differential Equations (NCDEs)</strong></li>
+  <li><strong>Neural Stochastic Differential Equations (NSDEs)</strong></li>
 </ul>
 
-<p><strong>NDE for TS</strong> curates:</p>
-<ul>
-  <li>
-<strong>Tutorials</strong> explaining the mathematical foundations and practical implementation.</li>
-  <li>
-<strong>Surveys</strong> of key papers, from the original NODE framework to recent NCDE/NSDE variants.</li>
-  <li>
-<strong>Code examples</strong> using PyTorch, <code class="language-plaintext highlighter-rouge">torchcde</code>, and <code class="language-plaintext highlighter-rouge">torchsde</code>, ready to run in Colab.</li>
-  <li>
-<strong>Applications</strong> across healthcare, industry, finance, and science.</li>
-</ul>
+<p>We offer a detailed discussion of their mathematical formulations, numerical methods, and key applications, highlighting their unique ability to model continuous-time dynamics. This survey serves as a foundational guide for researchers and practitioners aiming to leverage NDEs for advanced time series analysis.</p>
 
 <hr>
 
-<h2 id="learning-goals">Learning Goals</h2>
+<h2 id="key-contributions-of-this-survey">Key Contributions of This Survey</h2>
 
-<p>By the end of this resource, you will:</p>
-<ol>
-  <li>Understand why continuous-time modeling is beneficial for irregular and multi-resolution time series.</li>
-  <li>Know the differences between NODEs, NCDEs, and NSDEs — their assumptions, strengths, and limitations.</li>
-  <li>Be able to train and evaluate NDE-based models with attention to solver choice, stability, and computational cost.</li>
-  <li>Recognize strategies for improving robustness, interpretability, and trustworthiness in sensitive domains.</li>
-</ol>
-
-<hr>
-
-<h2 id="target-audience">Target Audience</h2>
-
-<ul>
-  <li>
-<strong>Graduate students</strong> entering time series modeling research.</li>
-  <li>
-<strong>Applied researchers</strong> in domains with irregular or sparse observations.</li>
-  <li>
-<strong>Practitioners</strong> seeking robust forecasting or classification solutions under dataset shift and uncertainty.</li>
-</ul>
-
-<p><strong>Prerequisites:</strong></p>
-<ul>
-  <li>Working knowledge of calculus, linear algebra, and probability.</li>
-  <li>Familiarity with deep learning fundamentals and PyTorch.</li>
-</ul>
-
-<hr>
-
-<h2 id="structure-of-the-content">Structure of the Content</h2>
+<p>This paper provides a structured synthesis of the NDE field for time series analysis, with a focus on:</p>
 
 <ol>
   <li>
-<strong>Motivation:</strong>
-    <ul>
-      <li>Limitations of discrete-time models in the presence of irregular sampling, noise, and missing data.</li>
-    </ul>
-  </li>
+<strong>Foundational Models:</strong> A detailed breakdown of the formulations and extensions for NODEs, NCDEs, and NSDEs.</li>
   <li>
-<strong>Model Families:</strong>
-    <ul>
-      <li>
-<strong>Neural Ordinary Differential Equations (NODEs):</strong> Continuous-time hidden dynamics without control paths.</li>
-      <li>
-<strong>Neural Controlled Differential Equations (NCDEs):</strong> Extension for systems driven by continuous control signals.</li>
-      <li>
-<strong>Neural Stochastic Differential Equations (NSDEs):</strong> Incorporating stochasticity for uncertainty-aware dynamics.</li>
-    </ul>
-  </li>
+<strong>Theoretical Underpinnings:</strong> An analysis of universal approximation properties, conditions for the existence and uniqueness of solutions, and the stability of different NDE families.</li>
   <li>
-<strong>Training &amp; Tooling:</strong>
-    <ul>
-      <li>Adjoint sensitivity method, solver choices, handling stiffness.</li>
-      <li>Regularization techniques and numerical stability considerations.</li>
-    </ul>
-  </li>
+<strong>Practical Implementation:</strong> A guide to practical considerations, including optimization with the adjoint method, regularization techniques, and the selection of numerical solvers.</li>
   <li>
-<strong>Trustworthy NDEs:</strong>
-    <ul>
-      <li>Robustness to dataset shift.</li>
-      <li>Uncertainty quantification.</li>
-      <li>Interpretability in high-stakes domains.</li>
-    </ul>
-  </li>
-  <li>
-<strong>Hands-on Examples:</strong>
-    <ul>
-      <li>Jupyter notebooks for interpolation, classification, and forecasting.</li>
-      <li>Step-by-step code walkthroughs with domain-specific datasets.</li>
-    </ul>
-  </li>
-  <li>
-<strong>Reference Library:</strong>
-    <ul>
-      <li>Curated bibliography of foundational and recent papers.</li>
-      <li>Links to open-source implementations and benchmarks.</li>
-    </ul>
-  </li>
+<strong>Empirical Comparison:</strong> A consolidated summary of benchmark results across a wide range of tasks, including interpolation, forecasting, and classification.</li>
 </ol>
 
 <hr>
@@ -361,6 +284,92 @@
               <h4 class="card-title mb-1">YongKyung Oh</h4>
               
                 <p class="card-text text-muted mb-0">University of California, Los Angeles (UCLA)</p>
+              
+            </div>
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+  <div class="col mb-3">
+  <a href="#">
+    <div class="card h-100 hoverable">
+      <div class="row g-0 align-items-center">
+        
+          <div class="col-6 col-md-4" style="padding-left: 24px;">
+            
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/blank-480.webp 480w,/assets/img/blank-800.webp 800w,/assets/img/blank-1400.webp 1400w," type="image/webp" sizes="(min-width: 768px) 156px, 50vw"></source>
+      
+    
+    <img src="/assets/img/blank.jpg" class="card-img" width="100%" height="auto" alt="Seungsu Kam" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          </div>
+          <div class="col-6 col-md-8">
+        
+            <div class="card-body">
+              <h4 class="card-title mb-1">Seungsu Kam</h4>
+              
+                <p class="card-text text-muted mb-0">Ulsan National Institute of Science and Technology (UNIST)</p>
+              
+            </div>
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+  <div class="col mb-3">
+  <a href="#">
+    <div class="card h-100 hoverable">
+      <div class="row g-0 align-items-center">
+        
+          <div class="col-6 col-md-4" style="padding-left: 24px;">
+            
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/blank-480.webp 480w,/assets/img/blank-800.webp 800w,/assets/img/blank-1400.webp 1400w," type="image/webp" sizes="(min-width: 768px) 156px, 50vw"></source>
+      
+    
+    <img src="/assets/img/blank.jpg" class="card-img" width="100%" height="auto" alt="Jonghun Lee" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          </div>
+          <div class="col-6 col-md-8">
+        
+            <div class="card-body">
+              <h4 class="card-title mb-1">Jonghun Lee</h4>
+              
+                <p class="card-text text-muted mb-0">Ulsan National Institute of Science and Technology (UNIST)</p>
               
             </div>
           </div>
@@ -447,6 +456,49 @@
               <h4 class="card-title mb-1">Sungil Kim</h4>
               
                 <p class="card-text text-muted mb-0">Ulsan National Institute of Science and Technology (UNIST)</p>
+              
+            </div>
+          </div>
+      </div>
+    </div>
+  </a>
+</div>
+
+  <div class="col mb-3">
+  <a href="https://mii.ucla.edu/" rel="external nofollow noopener" target="_blank">
+    <div class="card h-100 hoverable">
+      <div class="row g-0 align-items-center">
+        
+          <div class="col-6 col-md-4" style="padding-left: 24px;">
+            
+
+
+
+<figure>
+  <picture>
+    <!-- Auto scaling with imagemagick -->
+    <!--
+      See https://www.debugbear.com/blog/responsive-images#w-descriptors-and-the-sizes-attribute and
+      https://developer.mozilla.org/en-US/docs/Learn/HTML/Multimedia_and_embedding/Responsive_images for info on defining 'sizes' for responsive images
+    -->
+    
+      
+        <source class="responsive-img-srcset" srcset="/assets/img/profiles/alex-480.webp 480w,/assets/img/profiles/alex-800.webp 800w,/assets/img/profiles/alex-1400.webp 1400w," type="image/webp" sizes="(min-width: 768px) 156px, 50vw"></source>
+      
+    
+    <img src="/assets/img/profiles/alex.jpg" class="card-img" width="100%" height="auto" alt="Alex A. T. Bui" loading="eager" onerror="this.onerror=null; $('.responsive-img-srcset').remove();">
+  </picture>
+
+  
+</figure>
+
+          </div>
+          <div class="col-6 col-md-8">
+        
+            <div class="card-body">
+              <h4 class="card-title mb-1">Alex A. T. Bui</h4>
+              
+                <p class="card-text text-muted mb-0">University of California, Los Angeles (UCLA)</p>
               
             </div>
           </div>
