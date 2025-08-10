@@ -1,6 +1,6 @@
 ---
 layout: about
-permalink: /review/
+permalink: /
 title: Review
 description: 
 nav: true

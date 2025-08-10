@@ -1,8 +1,10 @@
 ---
 layout: about
-permalink: /
+permalink: /tutorial/
 title: Tutorial
 description: 
+# nav: true
+# nav_order: 1
 
 ---
 
