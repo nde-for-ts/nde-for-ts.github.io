@@ -54,7 +54,7 @@ abbr={NCDEs},
 abstract={Many real-world time series are irregularly sampled, with observations arriving at arbitrary time points. Standard recurrent neural networks are not well-suited to this setting, as they assume fixed time intervals between observations. We propose a new model for irregularly-sampled time series based on Neural Controlled Differential Equations (CDEs). Our model learns the continuous-time dynamics of the underlying system, and can be evaluated at arbitrary time points. We demonstrate the effectiveness of our model on several real-world datasets, including medical records and human motion capture data. Our model outperforms state-of-the-art methods for irregularly-sampled time series, and is competitive with methods for regularly-sampled data.},
 paper={https://proceedings.neurips.cc/paper/2020/file/6e1366887956979f3326740908976477-Paper.pdf},
 arxiv={2005.08926},
-github={patrickkidger/NeuralCDE},
+github={patrick-kidger/NeuralCDE},
 }
 
 @inproceedings{li_scalable_2020,
@@ -85,7 +85,7 @@ abbr={NCDEs},
 abstract={Neural Controlled Differential Equations (CDEs) are a powerful model for irregularly-sampled time series. However, their computational cost scales quadratically with the length of the time series, making them impractical for long sequences. We propose Neural Rough Differential Equations (RDEs), a new model that leverages the theory of rough paths to reduce the computational cost of CDEs to linear in the length of the time series. Our model retains the expressiveness of CDEs while being significantly more efficient. We demonstrate the effectiveness of our model on several real-world datasets, including human motion capture data and medical records. Our model outperforms existing methods for long irregularly-sampled time series.},
 paper={http://proceedings.mlr.press/v139/morrill21a/morrill21a.pdf},
 arxiv={2106.01311},
-github={patrickkidger/NeuralRDE},
+github={jambo6/neuralRDEs},
 }
 
 @inproceedings{jhin_exit_2022,
@@ -116,7 +116,7 @@ abbr={NCDEs},
 abstract={Neural Controlled Differential Equations (NCDEs) have shown great promise in modeling irregularly sampled time series data. A key component of NCDEs is the path, which typically relies on linear or cubic spline interpolation of the input data. However, these fixed interpolation schemes may not be optimal for capturing complex underlying dynamics. In this paper, we propose a novel approach that introduces a 'learnable path' within NCDEs. Our method allows the model to dynamically learn the most suitable interpolation scheme for the given data, thereby enhancing its expressiveness and adaptability. We demonstrate the effectiveness of our learnable path NCDE on various real-world datasets, showing improved performance in tasks such as time-series classification and forecasting, especially in scenarios with highly irregular observations.},
 paper={https://ojs.aaai.org/index.php/AAAI/article/view/25969},
 arxiv={2301.08502},
-github={sheoyon-jhin/Learnable-Path-NCDE},
+github={jeongwhanchoi/LEAP},
 }
 
 @inproceedings{dupont_augmented_2019,
@@ -142,7 +142,7 @@ abbr={NODEs},
 abstract={Many real-world time series are sporadically observed, meaning that observations arrive at irregular time intervals and some values may be missing. Standard recurrent neural networks struggle with such data due to their reliance on fixed time steps. We propose GRU-ODE-Bayes, a novel model that combines the strengths of Gated Recurrent Units (GRUs) with Ordinary Differential Equations (ODEs) and Bayesian inference to handle sporadically observed time series. Our model learns continuous-time dynamics and provides uncertainty estimates for predictions. We demonstrate the effectiveness of GRU-ODE-Bayes on several real-world datasets, including medical records and climate data, showing significant improvements over state-of-the-art methods for irregularly sampled time series.},
 paper={https://proceedings.neurips.cc/paper/2019/file/7377200700f909599e03099ad1139cb3-Paper.pdf},
 arxiv={1905.13221},
-github={edebrouwer/GRU-ODE-Bayes},
+github={edebrouwer/gru_ode_bayes},
 }
 
 @misc{oh_comprehensive_2025,
@@ -357,7 +357,7 @@ abbr={NCDEs},
 abstract={Neural Controlled Differential Equations (NCDEs) have shown promising results in modeling irregularly sampled time series. However, their ability to capture long-range dependencies and focus on relevant information within the time series can be limited. We propose Attentive Neural Controlled Differential Equations (Attentive NCDEs), a novel framework that integrates attention mechanisms into NCDEs. This allows the model to dynamically weigh the importance of different time points and features, enhancing its ability to capture salient information for time-series classification and forecasting. We demonstrate the effectiveness of Attentive NCDEs on various real-world datasets, showing significant improvements over state-of-the-art NCDE models, especially in complex scenarios with varying data quality and length.},
 paper={https://link.springer.com/article/10.1007/s10115-023-01977-5},
 arxiv={2303.09020},
-github={sheoyon-jhin/Attentive-NCDE},
+github={sheoyon-jhin/ANCDE},
 }
 
 @inproceedings{chen_neural_2018,
@@ -398,7 +398,7 @@ abbr={NODEs},
 abstract={Neural Ordinary Differential Equations (Neural ODEs) have shown promise in modeling continuous-time dynamics. However, they operate in Euclidean space, which may not be suitable for data residing on non-Euclidean manifolds. We introduce Neural Manifold Ordinary Differential Equations (Neural Manifold ODEs), a novel framework that extends Neural ODEs to learn dynamics on Riemannian manifolds. Our approach leverages geometric deep learning techniques to define ODEs on curved spaces, allowing for more natural and expressive modeling of data with underlying manifold structures. We demonstrate the effectiveness of Neural Manifold ODEs on tasks such as learning dynamics on spheres and hyperbolic spaces, showing improved performance and interpretability compared to Euclidean counterparts.},
 paper={https://proceedings.neurips.cc/paper/2020/file/229699d324817122c560356723229718-Paper.pdf},
 arxiv={2006.08445},
-github={louaaron/neural-manifold-odes},
+github={CUAI/Neural-Manifold-Ordinary-Differential-Equations},
 }
 
 @inproceedings{li_neural_2023,
@@ -414,7 +414,6 @@ abbr={NODEs},
 abstract={Modeling complex time series data, especially those with irregular sampling and missing values, remains a significant challenge. Traditional methods often struggle with capturing underlying continuous dynamics and long-term dependencies. We propose Neural LAD (Neural Latent Dynamics), a novel framework that leverages latent ordinary differential equations (ODEs) to model the continuous evolution of time series in a low-dimensional latent space. Neural LAD learns a flexible, data-driven latent dynamics model that can handle irregular observations and infer missing values. We demonstrate the effectiveness of Neural LAD on various real-world datasets, including medical records and human activity recognition, showing superior performance in tasks such as imputation, forecasting, and classification compared to state-of-the-art methods.},
 paper={https://proceedings.neurips.cc/paper_files/paper/2023/file/17345-Paper-Neural-Lad-A-Neural-Latent-Dynamics-Framework-for-Times-Series-Modeling-Abstract.pdf},
 arxiv={2305.18470},
-github={tingli-tsinghua/Neural-LAD},
 }
 
 @inproceedings{massaroli_dissecting_2020,
@@ -430,7 +429,6 @@ abbr={NODEs},
 abstract={Neural Ordinary Differential Equations (Neural ODEs) have gained significant attention for their ability to model continuous-time dynamics and offer memory-efficient training. However, their internal workings and the factors influencing their performance are not yet fully understood. We conduct a thorough dissection of Neural ODEs, analyzing various aspects such as their approximation capabilities, sensitivity to hyperparameters, and the role of the ODE solver. Through extensive empirical studies and theoretical insights, we provide a deeper understanding of why Neural ODEs work and how to effectively train them. Our findings offer practical guidelines for designing and applying Neural ODEs in various machine learning tasks.},
 paper={https://proceedings.neurips.cc/paper/2020/file/3952-Paper.pdf},
 arxiv={2006.07366},
-github={massaroli/Dissecting-Neural-ODEs},
 }
 
 @inproceedings{gholaminejad_anode_2019,
