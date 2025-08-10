@@ -1,6 +1,6 @@
 ---
 layout: about
-title: Home
+title: Tutorial
 permalink: /
 ---
 
@@ -10,7 +10,7 @@ permalink: /
 
 ## Overview
 
-Irregularly sampled time series appear in many domains — from wearable sensor streams and clinical records to industrial process logs and astronomical observations.  
+Modeling complex, irregular time series is a critical challenge in knowledge discovery and data mining. This tutorial introduces Neural Differential Equations (NDEs)—a powerful paradigm for continuous-time deep learning that intrinsically handles the non-uniform sampling and missing values where traditional models falter. We provide a comprehensive review of the theory and practical application of the entire NDE family: Neural Ordinary (NODEs), Controlled (NCDEs), and Stochastic (NSDEs) Differential Equations. The tutorial emphasizes robustness and stability and culminates in a hands-on session where participants will use key open-source libraries to solve real-world tasks like interpolation and classification. Designed for AI researchers and practitioners, this tutorial equips attendees with essential tools for time series analysis.
 
 **Neural Differential Equations (NDEs)** provide a principled way to model these signals in continuous time, enabling:
 - Flexible handling of non-uniform sampling and missingness.
@@ -85,7 +85,15 @@ By the end of this resource, you will:
 
 ---
 
-## Organizer
+## Organizers
+
+<h2>Organizers</h2>
+<div class="row row-cols-1 row-cols-md-2 g-3">
+  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
+  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
+  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
+  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
+</div>
 
 - [Dr. YongKyung Oh](https://yongkyung-oh.github.io/), Postdoctoral Researcher at the University of California, Los Angeles (UCLA) Health - David Geffen School of Medicine, contributing to the Medical & Imaging Informatics (MII) group led by Dr. Alex Bui.
 - [Prof. Dong-Young Lim](https://sites.google.com/view/dlim/), Assistant professor in the Department of Industrial Engineering and the Artificial Intelligence Graduate School at the Ulsan National Institute of Science and Technology (UNIST).
