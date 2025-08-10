@@ -24,5 +24,10 @@ profiles:
     content: organizer/sungil.md
     image_circular: false # crops the image to make it circular
     more_info: 
+  - align: left
+    image: profiles/alex.jpg
+    content: organizer/alex.md
+    image_circular: false # crops the image to make it circular
+    more_info: 
 
 ---

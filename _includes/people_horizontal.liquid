@@ -3,20 +3,20 @@
     <div class="card h-100 hoverable">
       <div class="row g-0 align-items-center">
         {% if include.img %}
-          <div class="col-4 col-md-4">
+          <div class="col-6 col-md-4" style="padding-left: 24px;">
             {% include figure.liquid
                loading="eager"
                path=include.img
                alt=include.name
                class="card-img"
-               sizes="(min-width: 768px) 200px, 40vw" %}
+               sizes="(min-width: 768px) 156px, 50vw" %}
           </div>
-          <div class="col-8 col-md-8">
+          <div class="col-6 col-md-8">
         {% else %}
           <div class="col-12">
         {% endif %}
             <div class="card-body">
-              <h3 class="card-title mb-1">{{ include.name }}</h3>
+              <h4 class="card-title mb-1">{{ include.name }}</h4>
               {% if include.affiliation %}
                 <p class="card-text text-muted mb-0">{{ include.affiliation }}</p>
               {% endif %}

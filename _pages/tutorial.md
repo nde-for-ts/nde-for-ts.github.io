@@ -1,7 +1,9 @@
 ---
 layout: about
-title: Tutorial
 permalink: /
+title: Tutorial
+description: 
+
 ---
 
 # **[CIKM2025] Neural Differential Equations for Continuous-Time Analysis**
@@ -76,28 +78,22 @@ By the end of this resource, you will:
 
 ---
 
-## Quick Links
+## Authors
 
-- **[Foundational Papers](/publications/)**  
-- **[Code Repositories](/publications/)**  
-- **[Tutorials](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**  
-- **[Slides & Figures](#)**
+<div class="row row-cols-1 row-cols-md-2 g-3">
+  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
+  {% include people_horizontal.liquid name="Dong-Young Lim" affiliation="Ulsan National Institute of Science and Technology (UNIST)" url="https://sites.google.com/view/dlim/" img="assets/img/profiles/dongyoung.jpg" %}
+  {% include people_horizontal.liquid name="Sungil Kim" affiliation="Ulsan National Institute of Science and Technology (UNIST)" url="https://analytics.unist.ac.kr/" img="assets/img/profiles/sungil.jpg" %}
+</div>
 
 ---
 
-## Organizers
+## Quick Links
 
-<h2>Organizers</h2>
-<div class="row row-cols-1 row-cols-md-2 g-3">
-  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
-  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
-  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
-  {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
-</div>
-
-- [Dr. YongKyung Oh](https://yongkyung-oh.github.io/), Postdoctoral Researcher at the University of California, Los Angeles (UCLA) Health - David Geffen School of Medicine, contributing to the Medical & Imaging Informatics (MII) group led by Dr. Alex Bui.
-- [Prof. Dong-Young Lim](https://sites.google.com/view/dlim/), Assistant professor in the Department of Industrial Engineering and the Artificial Intelligence Graduate School at the Ulsan National Institute of Science and Technology (UNIST).
-- [Prof. Sungil Kim](https://analytics.unist.ac.kr/), Associate Professor in the Department of Industrial Engineering and the Artificial Intelligence Graduate School at the Ulsan National Institute of Science and Technology (UNIST).
+- **[Foundational Papers](/publications/)**  
+- **[Code Repositories](#)**  
+- **[Tutorials](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**  
+- **[Slides & Figures](#)**
 
 ---
 

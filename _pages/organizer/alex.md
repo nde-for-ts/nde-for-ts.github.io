@@ -1,0 +1,3 @@
+## [Alex A. T. Bui](https://mii.ucla.edu/)
+
+Dr. Bui received his PhD in Computer Science in 2000, upon which he joined the UCLA faculty. He is now the Director of the Medical & Imaging Informatics (MII) group. His research includes informatics and data science for biomedical research and healthcare in areas related to distributed information architectures and mHealth; methodological development, application, and evaluation of artificial intelligence (AI) methods, including machine/reinforcement learning; and data visualization. His work bridges contemporary computational approaches with the opportunities arising from the breadth of biomedical observations and the electronic health record (EHR), tackling the associated translational challenges.
