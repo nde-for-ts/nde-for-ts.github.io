@@ -1,7 +1,7 @@
 ---
 layout: profiles
 permalink: /people/
-title: Organizers
+title: Contributors
 description: 
 nav: true
 nav_order: 3
