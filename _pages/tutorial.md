@@ -8,7 +8,7 @@ nav_order: 1
 
 ---
 
-# **[CIKM2025] Neural Differential Equations for Continuous-Time Analysis**
+# **Neural Differential Equations for Continuous-Time Analysis**
 
 ---
 

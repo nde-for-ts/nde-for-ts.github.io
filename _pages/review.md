@@ -6,7 +6,7 @@ description:
 
 ---
 
-# **[IJCAI2025] Comprehensive Review of Neural Differential Equations for Time Series Analysis**
+# **Comprehensive Review of Neural Differential Equations for Time Series Analysis**
 
 ---
 
