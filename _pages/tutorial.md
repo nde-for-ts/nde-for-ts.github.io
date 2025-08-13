@@ -101,7 +101,7 @@ By the end of this resource, you will:
 
 ## Quick Links
 
-- **[Foundational Papers](/publications/)**  
+- **[Foundational Papers](/papers/)**  
 - **[Code Repositories](#)**  
 - **[Tutorials](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**  
 - **[Slides & Figures](#)**
