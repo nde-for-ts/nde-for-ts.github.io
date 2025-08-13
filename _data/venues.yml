@@ -1,3 +1,9 @@
+"Review":
+  color: "#C9A227"
+
+"Related":
+  color: "#6A7C89"
+  
 "NODEs":
   color: "#2A4B8D"   
 
@@ -6,6 +12,3 @@
 
 "NSDEs":
   color: "#2F8F6F"  
-
-"Review":
-  color: "#C9A227"
