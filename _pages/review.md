@@ -1,8 +1,10 @@
 ---
 layout: about
-permalink: /
+permalink: /review/
 title: Review
 description: 
+nav: true
+nav_order: 2
 
 ---
 
