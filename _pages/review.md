@@ -52,8 +52,8 @@ This paper provides a structured synthesis of the NDE field for time series anal
 ## Quick Links
 
 - **[Foundational Papers](/papers/)**  
-- **[Code Repositories](#)**  
-- **[Tutorials](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**  
+- **[Code Repositories](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**  
+- **[Tutorials](https://drive.google.com/drive/folders/1lJz6m7L01r5r-1vZCBtVffElc0_rkkOl?usp=sharing)**  
 - **[Slides & Figures](#)**
 
 ---
