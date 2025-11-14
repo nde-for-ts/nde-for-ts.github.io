@@ -16,17 +16,6 @@ nav_order: 1
 
 Modeling complex, irregular time series is a critical challenge in knowledge discovery and data mining. This tutorial introduces Neural Differential Equations (NDEs)—a powerful paradigm for continuous-time deep learning that intrinsically handles the non-uniform sampling and missing values where traditional models falter. We provide a comprehensive review of the theory and practical application of the entire NDE family: Neural Ordinary (NODEs), Controlled (NCDEs), and Stochastic (NSDEs) Differential Equations. The tutorial emphasizes robustness and stability and culminates in a hands-on session where participants will use key open-source libraries to solve real-world tasks like interpolation and classification. Designed for AI researchers and practitioners, this tutorial equips attendees with essential tools for time series analysis.
 
-**Neural Differential Equations (NDEs)** provide a principled way to model these signals in continuous time, enabling:
-- Flexible handling of non-uniform sampling and missingness.
-- Rich latent dynamics modeling beyond discrete-step RNNs and Transformers.
-- Integration of domain knowledge through the structure of differential equations.
-
-**NDE for TS** curates:
-- **Tutorials** explaining the mathematical foundations and practical implementation.
-- **Surveys** of key papers, from the original NODE framework to recent NCDE/NSDE variants.
-- **Code examples** using PyTorch, `torchcde`, and `torchsde`, ready to run in Colab.
-- **Applications** across healthcare, industry, finance, and science.
-
 ---
 
 ## Learning Goals
@@ -51,32 +40,34 @@ By the end of this resource, you will:
 
 ---
 
-## Structure of the Content
+## Tutorial Outline and Structure
 
-1. **Motivation:**  
-   - Limitations of discrete-time models in the presence of irregular sampling, noise, and missing data.
+### [**Session I: Foundations of Continuous-Time Modeling**](https://drive.google.com/file/d/1zotcveHW_me0ayIvroeEkEdA0uapp_Mb/view?usp=sharing)
 
-2. **Model Families:**  
-   - **Neural Ordinary Differential Equations (NODEs):** Continuous-time hidden dynamics without control paths.  
-   - **Neural Controlled Differential Equations (NCDEs):** Extension for systems driven by continuous control signals.  
-   - **Neural Stochastic Differential Equations (NSDEs):** Incorporating stochasticity for uncertainty-aware dynamics.
+* **Overview & Motivation** *(10 min)*
+  *Why continuous-time? Challenges of irregular data.*
 
-3. **Training & Tooling:**  
-   - Adjoint sensitivity method, solver choices, handling stiffness.  
-   - Regularization techniques and numerical stability considerations.
+* **Neural Ordinary Differential Equations** *(35 min)*
+  *Theory, core concepts, and the adjoint method for training.*
 
-4. **Trustworthy NDEs:**  
-   - Robustness to dataset shift.  
-   - Uncertainty quantification.  
-   - Interpretability in high-stakes domains.
+* [**Hands-on: Part I**](https://drive.google.com/file/d/1Y2mwexZAI2xfLnR6vYMSTOVJxbw_79an/view?usp=drive_link) *(30 min)*
+  *Implementing Neural Ordinary Differential Equations and Latent ODEs.*
 
-5. **Hands-on Examples:**  
-   - Jupyter notebooks for interpolation, classification, and forecasting.  
-   - Step-by-step code walkthroughs with domain-specific datasets.
+---
 
-6. **Reference Library:**  
-   - Curated bibliography of foundational and recent papers.  
-   - Links to open-source implementations and benchmarks.
+### [**Session II: Advanced Models and Applications**](https://drive.google.com/file/d/1M9X8L5LLKZMARPPHOb_6ElqpHrqjUbsI/view?usp=sharing)
+
+* **Neural Controlled Differential Equations** *(25 min)*
+  *Handling irregular data as a continuous path.*
+
+* **Neural Stochastic Differential Equations** *(20 min)*
+  *Modeling uncertainty; focus on Stable SDEs.*
+
+* [**Hands-on: Part II**](https://drive.google.com/file/d/1Y2mwexZAI2xfLnR6vYMSTOVJxbw_79an/view?usp=drive_link) *(20 min)*
+  *Implementing and comparing advanced models.*
+
+* **Summary & Future Directions** *(10 min)*
+  *Recap of the NDE family, applications, and conclusion.*
 
 ---
 
@@ -85,7 +76,7 @@ By the end of this resource, you will:
 <div class="row row-cols-1 row-cols-md-2 g-3">
   {% include people_horizontal.liquid name="YongKyung Oh" affiliation="University of California, Los Angeles (UCLA)" url="https://yongkyung-oh.github.io/" img="assets/img/profiles/yongkyung.jpg" %}
   {% include people_horizontal.liquid name="Dong-Young Lim" affiliation="Ulsan National Institute of Science and Technology (UNIST)" url="https://sites.google.com/view/dlim/" img="assets/img/profiles/dongyoung.jpg" %}
-  {% include people_horizontal.liquid name="Sungil Kim" affiliation="Ulsan National Institute of Science and Technology (UNIST)" url="https://analytics.unist.ac.kr/" img="assets/img/profiles/sungil.jpg" %}
+  {% include people_horizontal.liquid name="Sungil Kim" affiliation="Ulsan National Institute of Science and Technology (UNIST)" url="https://analytics.unist.ac.kr/" img="assets/img/profiles/sungil.png" %}
 </div>
 
 ---
@@ -104,7 +95,7 @@ By the end of this resource, you will:
 - **[Foundational Papers](/papers/)**  
 - **[Code Repositories](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**  
 - **[Tutorials](https://drive.google.com/drive/folders/1lJz6m7L01r5r-1vZCBtVffElc0_rkkOl?usp=sharing)**  
-- **[Slides & Figures](#)**
+- **[Slides & Figures](https://drive.google.com/drive/folders/16MXo3gMfk148Rx3XfDFFhc-Dy3TvHvhf?usp=sharing)**
 
 ---
 

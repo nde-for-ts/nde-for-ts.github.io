@@ -20,7 +20,7 @@ profiles:
     image_circular: false # crops the image to make it circular
     more_info: 
   - align: left
-    image: profiles/sungil.jpg
+    image: profiles/sungil.png
     content: organizer/sungil.md
     image_circular: false # crops the image to make it circular
     more_info: 
