@@ -42,7 +42,7 @@ By the end of this resource, you will:
 
 ## Tutorial Outline and Structure
 
-### [**Session I: Foundations of Continuous-Time Modeling**](https://drive.google.com/file/d/1zotcveHW_me0ayIvroeEkEdA0uapp_Mb/view?usp=sharing)
+### **Session I: Foundations of Continuous-Time Modeling** [[link]](https://drive.google.com/file/d/1zotcveHW_me0ayIvroeEkEdA0uapp_Mb/view?usp=sharing)
 
 * **Overview & Motivation** *(10 min)*
   *Why continuous-time? Challenges of irregular data.*
@@ -50,12 +50,12 @@ By the end of this resource, you will:
 * **Neural Ordinary Differential Equations** *(35 min)*
   *Theory, core concepts, and the adjoint method for training.*
 
-* [**Hands-on: Part I**](https://drive.google.com/file/d/1Y2mwexZAI2xfLnR6vYMSTOVJxbw_79an/view?usp=drive_link) *(30 min)*
+* **Hands-on: Part I** [[link]](https://drive.google.com/file/d/1Y2mwexZAI2xfLnR6vYMSTOVJxbw_79an/view?usp=drive_link) *(30 min)*
   *Implementing Neural Ordinary Differential Equations and Latent ODEs.*
 
 ---
 
-### [**Session II: Advanced Models and Applications**](https://drive.google.com/file/d/1M9X8L5LLKZMARPPHOb_6ElqpHrqjUbsI/view?usp=sharing)
+### **Session II: Advanced Models and Applications** [[link]](https://drive.google.com/file/d/1M9X8L5LLKZMARPPHOb_6ElqpHrqjUbsI/view?usp=sharing)
 
 * **Neural Controlled Differential Equations** *(25 min)*
   *Handling irregular data as a continuous path.*
@@ -63,7 +63,7 @@ By the end of this resource, you will:
 * **Neural Stochastic Differential Equations** *(20 min)*
   *Modeling uncertainty; focus on Stable SDEs.*
 
-* [**Hands-on: Part II**](https://drive.google.com/file/d/1Y2mwexZAI2xfLnR6vYMSTOVJxbw_79an/view?usp=drive_link) *(20 min)*
+* **Hands-on: Part II** [[link]](https://drive.google.com/file/d/1Y2mwexZAI2xfLnR6vYMSTOVJxbw_79an/view?usp=drive_link) *(20 min)*
   *Implementing and comparing advanced models.*
 
 * **Summary & Future Directions** *(10 min)*
