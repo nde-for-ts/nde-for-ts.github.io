@@ -11,21 +11,21 @@ ninja.data = [{
     },
   },{id: "nav-tutorial",
           title: "Tutorial",
-          description: "",
+          description: "Tutorial on Neural Differential Equations (NDEs) for continuous-time analysis, including NODEs, NCDEs, and NSDEs.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/tutorial/";
           },
         },{id: "nav-review",
           title: "Review",
-          description: "",
+          description: "Comprehensive review of Neural Differential Equations for Time Series Analysis covering NODEs, NCDEs, and NSDEs.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/review/";
           },
-        },{id: "nav-papers",
-          title: "Papers",
-          description: "",
+        },{id: "nav-foundational-papers",
+          title: "Foundational Papers",
+          description: "Curated list of neural differential equations for time series analysis and the comprehensive review paper.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/papers/";
