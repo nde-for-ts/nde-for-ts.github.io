@@ -3,7 +3,6 @@ layout: about
 permalink: /
 title: About
 description: Neural Differential Equations for Continuous-Time Analysis tutorial. A comprehensive review of the theory and practical application of the entire NDE family.
-
 ---
 
 # **Neural Differential Equations for Continuous-Time Analysis**
@@ -20,11 +19,13 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
 ---
 
 **Neural Differential Equations (NDEs)** provide a principled way to model these signals in continuous time, enabling:
+
 - Flexible handling of non-uniform sampling and missingness.
 - Rich latent dynamics modeling beyond discrete-step RNNs and Transformers.
 - Integration of domain knowledge through the structure of differential equations.
 
 **NDE for TS** curates:
+
 - **Tutorials** explaining the mathematical foundations and practical implementation.
 - **Surveys** of key papers, from the original NODE framework to recent NCDE/NSDE variants.
 - **Code examples** using PyTorch, `torchcde`, and `torchsde`, ready to run in Colab.
@@ -92,4 +93,4 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
 
 ---
 
-*Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/) — Last updated: {{ site.time | date: "%b %Y" }}*
+_Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/) — Last updated: {{ site.time | date: "%b %Y" }}_

@@ -4,17 +4,16 @@
       <div class="row g-0 align-items-center">
         {% if include.img %}
           <div class="col-6 col-md-4 align-items-center py-2 ps-2 ps-md-4" style="padding-left: 24px;">
-            {% include figure.liquid
-               loading="eager"
-               path=include.img
-               alt=include.name
-               class="card-img"
-               sizes="(min-width: 768px) 156px, 50vw" %}
+            {%
+              include figure.liquid
+              loading="eager"
+              path=include.img
+              alt=include.name
+              class="card-img"
+              sizes="(min-width: 768px) 156px, 50vw"
+            %}
           </div>
           <div class="col-6 col-md-8">
-        {% else %}
-          <div class="col-12">
-        {% endif %}
             <div class="card-body py-2">
               <h4 class="card-title mb-1">{{ include.name }}</h4>
               {% if include.affiliation %}
@@ -22,6 +21,16 @@
               {% endif %}
             </div>
           </div>
+        {% else %}
+          <div class="col-12">
+            <div class="card-body py-2">
+              <h4 class="card-title mb-1">{{ include.name }}</h4>
+              {% if include.affiliation %}
+                <p class="card-text text-muted mb-0">{{ include.affiliation }}</p>
+              {% endif %}
+            </div>
+          </div>
+        {% endif %}
       </div>
     </div>
   </a>
