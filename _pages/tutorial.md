@@ -2,7 +2,7 @@
 layout: about
 permalink: /tutorial/
 title: Tutorial
-description: 
+description: Tutorial on Neural Differential Equations (NDEs) for continuous-time analysis, including NODEs, NCDEs, and NSDEs.
 nav: true
 nav_order: 1
 

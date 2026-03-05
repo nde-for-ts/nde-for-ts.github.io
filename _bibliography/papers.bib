@@ -1,5 +1,4 @@
 ---
----
 
 @inproceedings{oh_stable_2024,
     title        = {Stable {Neural} {Stochastic} {Differential} {Equations} in {Analyzing} {Irregular} {Time} {Series} {Data}},
@@ -638,4 +637,46 @@ github={EmilienDupont/augmented-neural-odes},
     abstract={Normalizing flows provide a general mechanism for defining expressive probability distributions, only requiring the specification of a (usually simple) base distribution and a series of bijective transformations. There has been much recent work on normalizing flows, ranging from improving their expressive power to expanding their application. We believe the field has now matured and is in need of a unified perspective. In this review, we attempt to provide such a perspective by describing flows through the lens of probabilistic modeling and inference. We place special emphasis on the fundamental principles of flow design, and discuss foundational topics such as expressive power and computational trade-offs. We also broaden the conceptual framing of flows by relating them to more general probability transformations. Lastly, we summarize the use of flows for tasks such as generative modeling, approximate inference, and supervised learning.},
     paper={https://www.jmlr.org/papers/v22/19-1028.html},
     arxiv={1912.02762},
+}
+
+@inproceedings{oh_tandem_2025,
+	title        = {{TANDEM}: {Temporal} {Attention}-guided {Neural} {Differential} {Equations} for {Missingness} in {Time} {Series} {Classification}},
+	author       = {Oh, Yongkyung and Lim, Dongyoung and Kim, Sungil and Bui, Alex A. T.},
+	year         = 2025,
+	booktitle    = {Proceedings of the 34th {ACM} {International} {Conference} on {Information} and {Knowledge} {Management}},
+	publisher    = {Association for Computing Machinery},
+	address      = {Seoul, Republic of Korea},
+	pages        = {2232--2242},
+	abbr         = {NSDEs},
+    abstract={Handling missing data in time series classification remains a significant challenge in various domains. Traditional methods often rely on imputation, which may introduce bias or fail to capture the underlying temporal dynamics. In this paper, we propose TANDEM (Temporal Attention-guided Neural Differential Equations for Missingness), an attention-guided neural differential equation framework that effectively classifies time series data with missing values. Our approach integrates raw observation, interpolated control path, and continuous latent dynamics through a novel attention mechanism, allowing the model to focus on the most informative aspects of the data. We evaluate TANDEM on 30 benchmark datasets and a real-world medical dataset, demonstrating its superiority over existing state-of-the-art methods. Our framework not only improves classification accuracy but also provides insights into the handling of missing data, making it a valuable tool in practice.},
+    paper={https://dl.acm.org/doi/abs/10.1145/3746252.3761447},
+    arxiv={2508.17519},
+}
+
+@inproceedings{oh_modeling_2025,
+	title        = {Modeling {Irregular} {Astronomical} {Time} {Series} with {Neural} {Stochastic} {Delay} {Differential} {Equations}},
+	author       = {Oh, Yongkyung and Kam, Seungsu and Lim, Dongyoung and Kim, Sungil},
+	year         = 2025,
+	booktitle    = {Proceedings of the 34th {ACM} {International} {Conference} on {Information} and {Knowledge} {Management}},
+	publisher    = {Association for Computing Machinery},
+	address      = {Seoul, Republic of Korea},
+	pages        = {5068--5073},
+	abbr         = {NSDEs},
+    abstract={Astronomical time series are often irregularly sampled due to observational constraints, making them challenging to model with standard methods. While neural ordinary differential equations (NODEs) have shown promise in handling irregular time series, they struggle to capture the stochastic nature of astronomical data, such as quasar light curves. In this paper, we propose a neural stochastic delay differential equation (NSDE) framework that extends NODEs to model irregular time series with stochastic dynamics. Our approach incorporates stochastic noise into the latent dynamics and uses a delay mechanism to capture long-term dependencies. We evaluate our framework on three astronomical datasets, demonstrating its superior performance in capturing the underlying dynamics and improving prediction accuracy compared to existing methods.},
+    paper={https://dl.acm.org/doi/abs/10.1145/3746252.3760805},
+}
+
+@inproceedings{oh_neural_2025,
+	title        = {Neural {Differential} {Equations} for {Continuous}-{Time} {Analysis}},
+	author       = {Oh, Yongkyung and Lim, Dongyoung and Kim, Sungil},
+	year         = 2025,
+	booktitle    = {Proceedings of the 34th {ACM} {International} {Conference} on {Information} and {Knowledge} {Management}},
+	publisher    = {Association for Computing Machinery},
+	address      = {New York, NY, USA},
+	series       = {{CIKM} '25},
+	pages        = {6837--6840},
+	doi          = {10.1145/3746252.3761447},
+	abbr         = {Review},
+    abstract={Neural differential equations (NDEs) have emerged as a powerful framework for modeling continuous-time dynamics in time series analysis. However, existing NDE models often struggle to capture complex temporal dependencies and handle irregular sampling effectively. In this paper, we propose a novel NDE framework that extends existing models to capture complex temporal dependencies and handle irregular sampling effectively. Our approach incorporates stochastic noise into the latent dynamics and uses a delay mechanism to capture long-term dependencies. We evaluate our framework on three astronomical datasets, demonstrating its superior performance in capturing the underlying dynamics and improving prediction accuracy compared to existing methods.},
+    paper={https://dl.acm.org/doi/abs/10.1145/3746252.3761447},
 }

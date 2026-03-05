@@ -10,7 +10,7 @@ contact_note:
 description: Neural Differential Equations for Time Series      
 footer_text: 
 
-keywords: # add your own keywords or leave empty
+keywords: "Neural Differential Equations, Time Series, Deep Learning, Tutorial, NODE, NCDE, NSDE, Machine Learning" # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon/favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -82,8 +82,8 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: al-folio # blog_name will be displayed in your blog page
-blog_description: a simple whitespace theme for academics
+blog_name: NDE for TS
+blog_description: Neural Differential Equations for Continuous-Time Analysis
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
 
@@ -191,18 +191,14 @@ plugins:
   - jekyll-feed
   - jekyll-get-json
   - jekyll-imagemagick
-  - jekyll-jupyter-notebook
   - jekyll-link-attributes
   - jekyll-minifier
   - jekyll-paginate-v2
   - jekyll-regex-replace
   - jekyll/scholar
   - jekyll-sitemap
-  - jekyll-tabs
   - jekyll-terser
   - jekyll-toc
-  - jekyll-twitter-plugin
-  - jemoji
   - jekyll-seo-tag
 
 # Sitemap settings

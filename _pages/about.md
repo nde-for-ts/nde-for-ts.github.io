@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: About
-description: 
+description: Neural Differential Equations for Continuous-Time Analysis tutorial. A comprehensive review of the theory and practical application of the entire NDE family.
 
 ---
 
@@ -32,32 +32,50 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
 
 ---
 
-## Structure of the Content
+## Explore
 
-1. **Motivation:**  
-   - Limitations of discrete-time models in the presence of irregular sampling, noise, and missing data.
-
-2. **Model Families:**  
-   - **Neural Ordinary Differential Equations (NODEs):** Continuous-time hidden dynamics without control paths.  
-   - **Neural Controlled Differential Equations (NCDEs):** Extension for systems driven by continuous control signals.  
-   - **Neural Stochastic Differential Equations (NSDEs):** Incorporating stochasticity for uncertainty-aware dynamics.
-
-3. **Training & Tooling:**  
-   - Adjoint sensitivity method, solver choices, handling stiffness.  
-   - Regularization techniques and numerical stability considerations.
-
-4. **Trustworthy NDEs:**  
-   - Robustness to dataset shift.  
-   - Uncertainty quantification.  
-   - Interpretability in high-stakes domains.
-
-5. **Hands-on Examples:**  
-   - Jupyter notebooks for interpolation, classification, and forecasting.  
-   - Step-by-step code walkthroughs with domain-specific datasets.
-
-6. **Reference Library:**  
-   - Curated bibliography of foundational and recent papers.  
-   - Links to open-source implementations and benchmarks.
+<div class="row row-cols-1 row-cols-md-2 g-3">
+  <div class="col mb-3">
+    <a href="/tutorial/" style="text-decoration: none; color: inherit;">
+      <div class="card h-100 hoverable border">
+        <div class="card-body">
+          <h4 class="card-title">CIKM 2025 Tutorial</h4>
+          <p class="card-text text-muted">From mathematical foundations to hands-on practice. Learning goals, content structure, and code examples.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col mb-3">
+    <a href="/review/" style="text-decoration: none; color: inherit;">
+      <div class="card h-100 hoverable border">
+        <div class="card-body">
+          <h4 class="card-title">IJCAI 2025 Review</h4>
+          <p class="card-text text-muted">Comprehensive survey published at IJCAI-25. Theory and benchmarks for NODEs, NCDEs, and NSDEs.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col mb-3">
+    <a href="/papers/" style="text-decoration: none; color: inherit;">
+      <div class="card h-100 hoverable border">
+        <div class="card-body">
+          <h4 class="card-title">Foundational Papers</h4>
+          <p class="card-text text-muted">Curated collection of key papers in the NDE field. Search and filter supported.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col mb-3">
+    <a href="/people/" style="text-decoration: none; color: inherit;">
+      <div class="card h-100 hoverable border">
+        <div class="card-body">
+          <h4 class="card-title">Contributors</h4>
+          <p class="card-text text-muted">Profiles and affiliations of researchers involved in this project.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
 
 ---
 
@@ -71,15 +89,6 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
   {% include people_horizontal.liquid name="Sungil Kim" affiliation="Ulsan National Institute of Science and Technology (UNIST)" url="https://analytics.unist.ac.kr/" img="assets/img/profiles/sungil.png" %}
   {% include people_horizontal.liquid name="Alex A. T. Bui" affiliation="University of California, Los Angeles (UCLA)" url="https://mii.ucla.edu/" img="assets/img/profiles/alex.jpg" %}
 </div>
-
----
-
-## Quick Links
-
-- **[Foundational Papers](/papers/)**  
-- **[Code Repositories](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**  
-- **[Tutorials](https://drive.google.com/drive/folders/1lJz6m7L01r5r-1vZCBtVffElc0_rkkOl?usp=sharing)**  
-- **[Slides & Figures](https://drive.google.com/drive/folders/16MXo3gMfk148Rx3XfDFFhc-Dy3TvHvhf?usp=sharing)**
 
 ---
 
