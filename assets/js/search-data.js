@@ -23,8 +23,8 @@ ninja.data = [{
           handler: () => {
             window.location.href = "/review/";
           },
-        },{id: "nav-foundational-papers",
-          title: "Foundational Papers",
+        },{id: "nav-papers",
+          title: "Papers",
           description: "Curated list of neural differential equations for time series analysis and the comprehensive review paper.",
           section: "Navigation",
           handler: () => {
