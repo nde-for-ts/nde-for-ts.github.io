@@ -18,7 +18,7 @@ Modeling complex, irregularly sampled time series — with gaps, noise, and non-
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Review](https://nde-for-ts.github.io/review/)     | The IJCAI-25 survey _Comprehensive Review of Neural Differential Equations for Time Series Analysis_ — formulations, numerical methods, theory, and benchmarks for NODEs, NCDEs, and NSDEs. |
 | [Tutorial](https://nde-for-ts.github.io/tutorial/) | CIKM 2025 tutorial — from mathematical foundations to a hands-on session with `torchcde` / `torchsde`, including Colab-ready notebooks.                                                     |
-| [Papers](https://nde-for-ts.github.io/papers/)     | A curated, searchable bibliography of NDE papers, tagged by family (NODEs / NCDEs / NSDEs / Related).                                                                                      |
+| [Papers](https://nde-for-ts.github.io/papers/)     | A curated, searchable bibliography of NDE papers, tagged by family (NODEs / NCDEs / NSDEs / Related).                                                                                       |
 | [People](https://nde-for-ts.github.io/people/)     | Contributors and affiliations.                                                                                                                                                              |
 
 ## Featured publication
@@ -65,7 +65,7 @@ Preprint version:
 | ----------------------------------------------------- | ---------------------------------------------------------- |
 | [YongKyung Oh](https://yongkyung-oh.github.io/)       | University of California, Los Angeles (UCLA)               |
 | [Seungsu Kam](https://seungsukam.github.io/)          | Ulsan National Institute of Science and Technology (UNIST) |
-| Jonghun Lee                                           | Ulsan National Institute of Science and Technology (UNIST) |
+| [Jonghun Lee](https://sites.google.com/view/dlim/)    | Ulsan National Institute of Science and Technology (UNIST) |
 | [Dong-Young Lim](https://sites.google.com/view/dlim/) | Ulsan National Institute of Science and Technology (UNIST) |
 | [Sungil Kim](https://analytics.unist.ac.kr/)          | Ulsan National Institute of Science and Technology (UNIST) |
 | [Alex A. T. Bui](https://mii.ucla.edu/)               | University of California, Los Angeles (UCLA)               |
