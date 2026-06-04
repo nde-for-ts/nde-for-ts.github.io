@@ -1,4 +1,0 @@
-User-agent: *
-Disallow:
-
-Sitemap: https://nde-for-ts.github.io/sitemap.xml
