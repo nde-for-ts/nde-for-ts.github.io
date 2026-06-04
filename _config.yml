@@ -7,10 +7,10 @@ first_name: NDE for TS
 middle_name:
 last_name:
 contact_note:
-description: Neural Differential Equations for Time Series
+description: "A reference hub for Neural Differential Equations (NDEs) for time series: tutorials, surveys, and code for Neural ODEs, Neural CDEs, and Neural SDEs in continuous-time deep learning."
 footer_text:
 
-keywords: "Neural Differential Equations, Time Series, Deep Learning, Tutorial, NODE, NCDE, NSDE, Machine Learning" # add your own keywords or leave empty
+keywords: "Neural Differential Equations, Time Series, Deep Learning, Tutorial, NODE, NCDE, NSDE, Machine Learning, Neural ODE, Neural CDE, Neural SDE, continuous-time, irregular time series" # add your own keywords or leave empty
 lang: en # the language of your site (for example: en, fr, cn, ru, etc.)
 icon: favicon/favicon.ico # the emoji used as the favicon (alternatively, provide image name in /assets/img/)
 
@@ -176,9 +176,12 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
+  - _scripts/sync_zotero_bibliography.py
   - purgecss.config.js
   - README.md
+  - README-template.md
   - readme_preview/
+  - requirements.txt
   - vendor
 keep_files:
   - CNAME
@@ -295,13 +298,17 @@ filtered_bibtex_keywords:
     bibtex_show,
     blog,
     code,
+    dimensions,
     google_scholar_id,
+    github,
     html,
     inspirehep_id,
+    paper,
     pdf,
     poster,
     preview,
     selected,
+    shorttitle,
     slides,
     supp,
     video,
