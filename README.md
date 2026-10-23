@@ -18,7 +18,7 @@ Modeling complex, irregularly sampled time series — with gaps, noise, and non-
 | -------------------------------------------------- | ------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
 | [Review](https://nde-for-ts.github.io/review/)     | The IJCAI-25 survey _Comprehensive Review of Neural Differential Equations for Time Series Analysis_ — formulations, numerical methods, theory, and benchmarks for NODEs, NCDEs, and NSDEs. |
 | [Tutorial](https://nde-for-ts.github.io/tutorial/) | CIKM 2025 tutorial — from mathematical foundations to a hands-on session with `torchcde` / `torchsde`, including Colab-ready notebooks.                                                     |
-| [Papers](https://nde-for-ts.github.io/papers/)     | A curated, searchable bibliography of NDE papers, tagged by family (NODEs / NCDEs / NSDEs / Related).                                                                                       |
+| [Papers](https://nde-for-ts.github.io/papers/)     | A curated, searchable bibliography of NDE papers, categorized as NODEs / NCDEs / NSDEs / NDEs / Related / Review.                                                                           |
 | [People](https://nde-for-ts.github.io/people/)     | Contributors and affiliations.                                                                                                                                                              |
 
 ## Featured publication
@@ -59,11 +59,31 @@ Preprint version:
 }
 ```
 
+## CIKM 2025 tutorial
+
+**Neural Differential Equations for Continuous-Time Analysis** — YongKyung Oh, Dong-Young Lim, and Sungil Kim. _Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM '25)_, pp. 6837–6840, 2025.
+
+- Tutorial and materials: <https://nde-for-ts.github.io/tutorial/>
+- Paper (DOI): <https://doi.org/10.1145/3746252.3761447>
+
+```bibtex
+@inproceedings{oh_neural_2025,
+  author    = {Oh, Yongkyung and Lim, Dongyoung and Kim, Sungil},
+  title     = {Neural Differential Equations for Continuous-Time Analysis},
+  booktitle = {Proceedings of the 34th ACM International Conference on Information and Knowledge Management},
+  series    = {CIKM '25},
+  pages     = {6837--6840},
+  publisher = {Association for Computing Machinery},
+  year      = {2025},
+  doi       = {10.1145/3746252.3761447}
+}
+```
+
 ## Contributors
 
 | Name                                                  | Affiliation                                                |
 | ----------------------------------------------------- | ---------------------------------------------------------- |
-| [YongKyung Oh](https://yongkyung-oh.github.io/)       | University of California, Los Angeles (UCLA)               |
+| [YongKyung Oh](https://yongkyung-oh.github.io/)       | Pusan National University                                  |
 | [Seungsu Kam](https://seungsukam.github.io/)          | Ulsan National Institute of Science and Technology (UNIST) |
 | [Jonghun Lee](https://sites.google.com/view/dlim/)    | Ulsan National Institute of Science and Technology (UNIST) |
 | [Dong-Young Lim](https://sites.google.com/view/dlim/) | Ulsan National Institute of Science and Technology (UNIST) |
@@ -71,6 +91,24 @@ Preprint version:
 | [Alex A. T. Bui](https://mii.ucla.edu/)               | University of California, Los Angeles (UCLA)               |
 
 Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/).
+
+## Local development
+
+This is a Jekyll site. Use the Ruby version in `.ruby-version` with Bundler installed, then run:
+
+```bash
+bundle install
+bundle exec jekyll serve
+```
+
+For a production build:
+
+```bash
+JEKYLL_ENV=production bundle exec jekyll build
+```
+
+Page content lives in `_pages/`, paper metadata in `_bibliography/papers.bib`, templates in `_layouts/` and `_includes/`, and site settings in `_config.yml`.
+The `Deploy site` workflow builds `main`, removes unused CSS, and publishes the generated site to `gh-pages`, which GitHub Pages serves.
 
 ## Acknowledgements & License
 
