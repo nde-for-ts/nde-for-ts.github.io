@@ -2,8 +2,8 @@
 layout: profiles
 permalink: /people/
 title: Contributors
-description: "Profiles of researchers behind NDE for TS, including contributors from UCLA and UNIST."
-keywords: "NDE for TS contributors, neural differential equations researchers, YongKyung Oh, Dong-Young Lim, Sungil Kim, UCLA, UNIST"
+description: "Profiles of researchers behind NDE for TS, including contributors from Pusan National University, UCLA, and UNIST."
+keywords: "NDE for TS contributors, neural differential equations researchers, YongKyung Oh, Dong-Young Lim, Sungil Kim, Pusan National University, UCLA, UNIST"
 nav: true
 nav_order: 4
 
