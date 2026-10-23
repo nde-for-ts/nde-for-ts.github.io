@@ -19,6 +19,11 @@
               {% if include.affiliation %}
                 <p class="card-text text-muted mb-0">{{ include.affiliation }}</p>
               {% endif %}
+              {% if include.note %}
+                <p class="card-text text-muted small mb-0">
+                  <em>{{ include.note | escape }}</em>
+                </p>
+              {% endif %}
             </div>
           </div>
         {% else %}
@@ -27,6 +32,11 @@
               <h4 class="card-title mb-1">{{ include.name }}</h4>
               {% if include.affiliation %}
                 <p class="card-text text-muted mb-0">{{ include.affiliation }}</p>
+              {% endif %}
+              {% if include.note %}
+                <p class="card-text text-muted small mb-0">
+                  <em>{{ include.note | escape }}</em>
+                </p>
               {% endif %}
             </div>
           </div>
