@@ -32,7 +32,7 @@ ninja.data = [{
           },
         },{id: "nav-contributors",
           title: "Contributors",
-          description: "Profiles of researchers behind NDE for TS, including contributors from UCLA and UNIST.",
+          description: "Profiles of researchers behind NDE for TS, including contributors from Pusan National University, UCLA, and UNIST.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
