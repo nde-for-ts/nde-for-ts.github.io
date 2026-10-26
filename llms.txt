@@ -1,0 +1,21 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# {{ site.title }}
+
+> {{ site.description }}
+
+Neural differential equations model continuous-time dynamics. This site covers neural ordinary differential equations (Neural ODEs), neural controlled differential equations (Neural CDEs), and neural stochastic differential equations (Neural SDEs).
+
+## Pages
+
+{% assign discovery_paths = '/,/papers/,/review/,/tutorial/,/people/' | split: ',' %}
+{% for discovery_path in discovery_paths %}{% assign resource = site.pages | where: 'url', discovery_path | first %}{% if resource %}- [{{ resource.title }}]({{ resource.url | absolute_url }}): {{ resource.description }}
+{% endif %}{% endfor %}
+## Related resources
+
+- [Tutorial code](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial): Practical examples linked from the tutorial.
+- [Scientific Inference Lab](https://scientific-inference-lab.github.io/): Research group homepage.
+- [YongKyung Oh](https://yongkyung-oh.github.io/): Maintainer's academic profile.

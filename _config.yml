@@ -7,7 +7,7 @@ first_name: NDE for TS
 middle_name:
 last_name:
 contact_note:
-description: "A reference hub for Neural Differential Equations (NDEs) for time series: tutorials, surveys, and code for Neural ODEs, Neural CDEs, and Neural SDEs in continuous-time deep learning."
+description: "Neural differential equations for time series: surveys, tutorials, and code."
 footer_text:
 
 keywords: "Neural Differential Equations, Time Series, Deep Learning, Tutorial, NODE, NCDE, NSDE, Machine Learning, Neural ODE, Neural CDE, Neural SDE, continuous-time, irregular time series" # add your own keywords or leave empty
@@ -61,7 +61,7 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: /assets/img/unsplash-image.jpg # The site-wide (default for all links) Open Graph preview image
+og_image: # Set only when a site-specific sharing image is available.
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification
@@ -200,6 +200,14 @@ plugins:
 # Sitemap settings
 defaults:
   - scope:
+      path: "googlecaa61bccf05b13d3.html"
+    values:
+      sitemap: false
+  - scope:
+      path: "naver1d6cb269a1c7dfafe78780afbf6f7f37.html"
+    values:
+      sitemap: false
+  - scope:
       path: "assets"
     values:
       sitemap: false
@@ -213,7 +221,7 @@ sass:
 
 jekyll-minifier:
   compress_javascript: false # set to false since we are using terser as the js minifier
-  exclude: ["robots.txt", "assets/js/search/*.js", "BingSiteAuth.xml"]
+  exclude: ["robots.txt", "assets/js/search/*.js", "BingSiteAuth.xml", "llms.txt"]
 
 # -----------------------------------------------------------------------------
 # Terser

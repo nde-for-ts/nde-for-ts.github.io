@@ -2,7 +2,7 @@
 layout: about
 permalink: /tutorial/
 title: Tutorial
-description: "CIKM 2025 Tutorial on Neural Differential Equations (NODE, NCDE, NSDE) for continuous-time time series — hands-on with PyTorch, torchcde, and torchsde."
+description: "Theory and practice of neural differential equations for time series analysis."
 keywords: "CIKM 2025 tutorial, neural differential equations, NODE, NCDE, NSDE, time series, continuous-time deep learning, PyTorch, torchcde, torchsde"
 nav: true
 nav_order: 1

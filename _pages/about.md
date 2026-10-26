@@ -2,7 +2,7 @@
 layout: about
 permalink: /
 title: About
-description: "NDE for TS: hub for Neural Differential Equations (NODE, NCDE, NSDE) for time series — tutorials, IJCAI-25 survey, curated papers, and code."
+description: "Neural differential equations for time series: surveys, tutorials, and code."
 keywords: "neural differential equations, NODE, NCDE, NSDE, time series, continuous-time deep learning, irregular time series, NDE for TS"
 ---
 

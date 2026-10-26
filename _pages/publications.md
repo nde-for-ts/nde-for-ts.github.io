@@ -2,7 +2,7 @@
 layout: page
 permalink: /papers/
 title: Papers
-description: "Curated bibliography of NDE papers — NODE, NCDE, NSDE — for time series analysis, with the IJCAI-25 review."
+description: "Research papers on neural differential equations for time series analysis."
 keywords: "neural differential equations papers, NODE bibliography, NCDE papers, NSDE papers, time series papers, NDE literature"
 nav: true
 nav_order: 3
