@@ -35,3 +35,18 @@ _scripts/sync_zotero_bibliography.py
 _bibliography/FORMAT.md
 _bibliography/SELECTION_RATIONALE.md
 assets/zotero/
+
+# Private agent configuration, review records, and scratch artifacts.
+.codex/
+.cursor/
+.gemini/
+.mcp.json
+CLAUDE.local.md
+DESIGN.md
+KNOWLEDGE.md
+docs/
+_archive/
+output/
+qc/
+*.internal.md
+*.local.md
