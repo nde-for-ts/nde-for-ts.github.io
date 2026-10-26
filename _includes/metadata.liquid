@@ -1,7 +1,10 @@
 {% if site.enable_google_verification or site.enable_bing_verification %}
   <!-- Website verification -->
   {% if site.enable_google_verification %}
-    <meta name="google-site-verification" content="{{ site.google_site_verification }}">
+    <!-- Primary Google verification is emitted by jekyll-seo-tag. -->
+    {% for token in site.additional_google_site_verifications %}
+      <meta name="google-site-verification" content="{{ token }}">
+    {% endfor %}
   {% endif %}
   {% if site.enable_bing_verification %}
     <meta name="msvalidate.01" content="{{ site.bing_site_verification }}">
