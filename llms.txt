@@ -1,0 +1,20 @@
+# NDE for TS
+
+> Neural differential equations for time series: surveys, tutorials, and code.
+
+Neural differential equations model continuous-time dynamics. This site covers neural ordinary differential equations (Neural ODEs), neural controlled differential equations (Neural CDEs), and neural stochastic differential equations (Neural SDEs).
+
+## Pages
+
+
+- [About](https://nde-for-ts.github.io/): Neural differential equations for time series: surveys, tutorials, and code.
+- [Papers](https://nde-for-ts.github.io/papers/): Research papers on neural differential equations for time series analysis.
+- [Review](https://nde-for-ts.github.io/review/): An IJCAI survey of neural differential equations for time series analysis.
+- [Tutorial](https://nde-for-ts.github.io/tutorial/): Theory and practice of neural differential equations for time series analysis.
+- [Contributors](https://nde-for-ts.github.io/people/): Researchers contributing to neural differential equations for time series.
+
+## Related resources
+
+- [Tutorial code](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial): Practical examples linked from the tutorial.
+- [Scientific Inference Lab](https://scientific-inference-lab.github.io/): Research group homepage.
+- [YongKyung Oh](https://yongkyung-oh.github.io/): Maintainer's academic profile.

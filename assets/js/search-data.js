@@ -11,28 +11,28 @@ ninja.data = [{
     },
   },{id: "nav-tutorial",
           title: "Tutorial",
-          description: "CIKM 2025 Tutorial on Neural Differential Equations (NODE, NCDE, NSDE) for continuous-time time series — hands-on with PyTorch, torchcde, and torchsde.",
+          description: "Theory and practice of neural differential equations for time series analysis.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/tutorial/";
           },
         },{id: "nav-review",
           title: "Review",
-          description: "IJCAI-25 survey: Comprehensive Review of Neural Differential Equations for Time Series Analysis — NODEs, NCDEs, NSDEs, benchmarks, DOI 10.24963/ijcai.2025/1179.",
+          description: "An IJCAI survey of neural differential equations for time series analysis.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/review/";
           },
         },{id: "nav-papers",
           title: "Papers",
-          description: "Curated bibliography of NDE papers — NODE, NCDE, NSDE — for time series analysis, with the IJCAI-25 review.",
+          description: "Research papers on neural differential equations for time series analysis.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/papers/";
           },
         },{id: "nav-contributors",
           title: "Contributors",
-          description: "Profiles of researchers behind NDE for TS, including contributors from Pusan National University, UCLA, and UNIST.",
+          description: "Researchers contributing to neural differential equations for time series.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/people/";
