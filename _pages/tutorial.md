@@ -55,35 +55,28 @@ nav_order: 1
 
 ## Overview
 
-Modeling complex, irregular time series is a common challenge in knowledge discovery and data mining. This tutorial introduces Neural Differential Equations (NDEs) as a continuous-time modeling framework for non-uniform sampling and missing observations. It reviews the theory and practical application of Neural Ordinary (NODEs), Controlled (NCDEs), and Stochastic (NSDEs) Differential Equations. The tutorial also covers robustness and stability, then uses open-source libraries for tasks such as interpolation and classification.
+Time series with non-uniform sampling and missing observations are common in knowledge discovery and data mining. This tutorial introduces Neural Differential Equations (NDEs) for modeling them in continuous time. It covers the theory and practical use of Neural Ordinary (NODEs), Controlled (NCDEs), and Stochastic (NSDEs) Differential Equations, including their robustness and stability. The hands-on sessions use open-source libraries for tasks such as interpolation and classification.
 
 ---
 
 ## Learning Goals
 
-By the end of this resource, you will:
-
-1. Understand why continuous-time modeling is beneficial for irregular and multi-resolution time series.
-2. Know the differences between NODEs, NCDEs, and NSDEs — their assumptions, strengths, and limitations.
-3. Be able to train and evaluate NDE-based models with attention to solver choice, stability, and computational cost.
-4. Recognize strategies for assessing robustness, interpretability, and reliability in sensitive domains.
+1. Why continuous-time modeling helps with irregular and multi-resolution time series.
+2. How NODEs, NCDEs, and NSDEs differ in their assumptions and limitations.
+3. How to train and evaluate NDE models, including solver choice, stability, and computational cost.
+4. How to assess robustness and reliability in sensitive domains.
 
 ---
 
-## Target Audience
+## Audience
 
-- **Graduate students** entering time series modeling research.
-- **Applied researchers** in domains with irregular or sparse observations.
-- **Practitioners** studying forecasting or classification under dataset shift and uncertainty.
+The tutorial is for graduate students entering time series modeling research, applied researchers in domains with irregular or sparse observations, and practitioners working on forecasting or classification under dataset shift and uncertainty.
 
-**Prerequisites:**
-
-- Working knowledge of calculus, linear algebra, and probability.
-- Familiarity with deep learning fundamentals and PyTorch.
+Prerequisites: working knowledge of calculus, linear algebra, and probability, and familiarity with deep learning and PyTorch.
 
 ---
 
-## Tutorial Outline and Structure
+## Outline
 
 ### **Session I: Foundations of Continuous-Time Modeling** [[link]](https://drive.google.com/file/d/1zotcveHW_me0ayIvroeEkEdA0uapp_Mb/view?usp=sharing)
 
@@ -142,4 +135,4 @@ By the end of this resource, you will:
 
 ---
 
-_Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/) — Last updated: {{ site.time | date: "%b %Y" }}_
+_Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/). Last updated: {{ site.time | date: "%b %Y" }}_

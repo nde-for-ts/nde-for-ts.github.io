@@ -46,29 +46,11 @@ keywords: "neural differential equations, NODE, NCDE, NSDE, time series, continu
 
 ## Overview
 
-Modeling complex and irregular time series is a key challenge in modern machine learning, especially when sampling is non-uniform or observations contain gaps or noise.
-This website serves as a resource for both introductory and advanced topics on Neural Differential Equations (NDEs), including tutorials, surveys, and practical guides. It summarizes the main ideas of continuous-time modeling and outlines the major NDE families: Neural Ordinary Differential Equations (NODEs), Neural Controlled Differential Equations (NCDEs), and Neural Stochastic Differential Equations (NSDEs).
+Time series are often sampled at non-uniform intervals, and observations can contain gaps or noise. Neural Differential Equations (NDEs) model such data in continuous time, which lets them handle uneven sampling and missing values. Their continuous latent dynamics complement discrete-step sequence models, and domain knowledge can be built into the structure of the differential equation.
 
-Beyond model design, the site discusses issues of robustness, stability, and reliability that often arise in practice. It also provides hands-on examples based on open-source implementations for tasks such as interpolation, representation learning, and classification. The goal is to help researchers and practitioners connect theory, algorithms, and practical workflows in continuous-time deep learning.
-
----
-
-**Neural Differential Equations (NDEs)** model these signals in continuous time, enabling:
-
-- Flexible handling of non-uniform sampling and missingness.
-- Continuous latent dynamics that complement discrete-step sequence models.
-- Integration of domain knowledge through the structure of differential equations.
-
-**NDE for TS** curates:
-
-- **Tutorials** explaining the mathematical foundations and practical implementation.
-- **Surveys** of key papers, from the original NODE framework to recent NCDE/NSDE variants.
-- **Code examples** using PyTorch, `torchcde`, and `torchsde`.
-- **Applications** across healthcare, industry, finance, and science.
+The main NDE families are Neural Ordinary Differential Equations (NODEs), Neural Controlled Differential Equations (NCDEs), and Neural Stochastic Differential Equations (NSDEs). Code examples use PyTorch, `torchcde`, and `torchsde` for tasks such as interpolation, representation learning, and classification.
 
 ---
-
-## Explore
 
 <div class="row row-cols-1 row-cols-md-2 g-3">
   <div class="col mb-3">
@@ -76,7 +58,7 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
       <div class="card h-100 hoverable border">
         <div class="card-body">
           <h4 class="card-title">CIKM 2025 Tutorial</h4>
-          <p class="card-text text-muted">From mathematical foundations to hands-on practice. Learning goals, content structure, and code examples.</p>
+          <p class="card-text text-muted">Mathematical foundations and hands-on implementation, with attention to robustness and stability.</p>
         </div>
       </div>
     </a>
@@ -86,7 +68,7 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
       <div class="card h-100 hoverable border">
         <div class="card-body">
           <h4 class="card-title">IJCAI 2025 Review</h4>
-          <p class="card-text text-muted">IJCAI-25 survey covering theory and benchmarks for NODEs, NCDEs, and NSDEs.</p>
+          <p class="card-text text-muted">Theory and benchmark results for NODEs, NCDEs, and NSDEs.</p>
         </div>
       </div>
     </a>
@@ -96,7 +78,7 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
       <div class="card h-100 hoverable border">
         <div class="card-body">
           <h4 class="card-title">Papers</h4>
-          <p class="card-text text-muted">Curated collection of key papers in the NDE field. Search and filter supported.</p>
+          <p class="card-text text-muted">From the original NODE framework to recent NCDE and NSDE variants, including applications in healthcare, industry, finance, and science.</p>
         </div>
       </div>
     </a>
@@ -106,7 +88,6 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
       <div class="card h-100 hoverable border">
         <div class="card-body">
           <h4 class="card-title">Contributors</h4>
-          <p class="card-text text-muted">Profiles and affiliations of researchers involved in this project.</p>
         </div>
       </div>
     </a>
@@ -128,4 +109,4 @@ Beyond model design, the site discusses issues of robustness, stability, and rel
 
 ---
 
-_Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/) — Last updated: {{ site.time | date: "%b %Y" }}_
+_Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/). Last updated: {{ site.time | date: "%b %Y" }}_

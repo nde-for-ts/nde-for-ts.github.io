@@ -55,26 +55,16 @@ nav_order: 2
 
 ## Overview
 
-Time series modeling often involves non-uniform sampling, missing observations, and continuous dynamics that are awkward for purely discrete-time models. Neural Differential Equations (NDEs) combine neural networks with differential-equation dynamics for continuous-time modeling. This paper reviews NDE-based methods for time series analysis, including neural ordinary differential equations, neural controlled differential equations, and neural stochastic differential equations. It summarizes mathematical formulations, numerical methods, applications, key challenges, and future research directions.
-
-This survey provides a comprehensive review of NDE-based methods for time series analysis, covering the three core families:
-
-- **Neural Ordinary Differential Equations (NODEs)**
-- **Neural Controlled Differential Equations (NCDEs)**
-- **Neural Stochastic Differential Equations (NSDEs)**
-
-The survey discusses mathematical formulations, numerical methods, and applications, with an emphasis on how these methods model continuous-time dynamics in time-series settings.
+Time series modeling often involves non-uniform sampling, missing observations, and continuous dynamics that are awkward for purely discrete-time models. Neural Differential Equations (NDEs) combine neural networks with differential-equation dynamics to model time series in continuous time. This paper reviews NDE methods for time series analysis in three families: Neural Ordinary Differential Equations (NODEs), Neural Controlled Differential Equations (NCDEs), and Neural Stochastic Differential Equations (NSDEs). It covers their mathematical formulations, numerical methods, and applications, with an emphasis on how they model continuous-time dynamics. It also discusses challenges and future research directions.
 
 ---
 
-## Key Contributions of This Survey
+## Contributions
 
-This paper provides a structured synthesis of the NDE field for time series analysis, with a focus on:
-
-1.  **Foundational Models:** A detailed breakdown of the formulations and extensions for NODEs, NCDEs, and NSDEs.
-2.  **Theoretical Underpinnings:** An analysis of universal approximation properties, conditions for the existence and uniqueness of solutions, and the stability of different NDE families.
-3.  **Practical Implementation:** A guide to practical considerations, including optimization with the adjoint method, regularization techniques, and the selection of numerical solvers.
-4.  **Empirical Comparison:** A consolidated summary of benchmark results across a wide range of tasks, including interpolation, forecasting, and classification.
+1. Formulations and extensions of NODEs, NCDEs, and NSDEs.
+2. Universal approximation properties, conditions for the existence and uniqueness of solutions, and the stability of each NDE family.
+3. Optimization with the adjoint method, regularization, and the choice of numerical solver.
+4. A summary of benchmark results on tasks including interpolation, forecasting, and classification.
 
 ---
 
@@ -93,11 +83,11 @@ This paper provides a structured synthesis of the NDE field for time series anal
 
 ## Quick Links
 
-- **[Foundational Papers](/papers/)**
+- **[Papers](/papers/)**
 - **[Code Repositories](https://github.com/yongkyung-oh/Stable-Neural-SDEs/tree/main/tutorial)**
 - **[Tutorials](https://drive.google.com/drive/folders/1lJz6m7L01r5r-1vZCBtVffElc0_rkkOl?usp=sharing)**
 - **[Slides & Figures](https://drive.google.com/drive/folders/16MXo3gMfk148Rx3XfDFFhc-Dy3TvHvhf?usp=sharing)**
 
 ---
 
-_Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/) — Last updated: {{ site.time | date: "%b %Y" }}_
+_Maintained by [YongKyung Oh](https://yongkyung-oh.github.io/). Last updated: {{ site.time | date: "%b %Y" }}_
