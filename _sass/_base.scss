@@ -49,6 +49,35 @@ table.table a {
   }
 }
 
+// In-text links carry an underline as well as the accent color, so they stay distinct from body text in both themes
+// (WCAG 1.4.1). Buttons keep their own treatment; publication-list links are reset in the Publications block.
+article {
+  // Long unbroken strings such as DOIs and URLs wrap instead of widening the page on narrow screens (WCAG 1.4.10).
+  overflow-wrap: break-word;
+
+  p,
+  li,
+  td {
+    a:not(.btn) {
+      text-decoration: underline;
+      text-decoration-thickness: 1px;
+      text-underline-offset: 0.15em;
+    }
+  }
+}
+
+// Keyboard focus. MDB resets outlines on .btn, .navbar-toggler and inputs (and .z-depth-0 removes box-shadow with
+// !important), so the ring is an outline marked !important. The theme color is 5.8:1 on light and 5.1:1 on dark.
+:focus-visible {
+  outline: 2px solid var(--global-theme-color) !important;
+  outline-offset: 2px;
+}
+
+// Bootstrap's .text-muted is a fixed #6c757d (3.28:1 on the dark card background); route it through the theme token.
+.text-muted {
+  color: var(--global-text-color-light) !important;
+}
+
 .table-dark {
   background-color: transparent;
   &.table-bordered {
@@ -720,7 +749,8 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    color: var(--global-divider-color);
+    // The divider token as text was 1.24:1 (light) and 1.70:1 (dark); the rule above stays a divider.
+    color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;
     margin-top: 2rem;
@@ -745,10 +775,16 @@ footer.sticky-bottom {
           display: inline-block;
           background-color: var(--global-theme-color);
           margin-bottom: 0.5rem;
-          color: var(--global-card-bg-color) !important;
+          // Venue fills are fixed per venue (_data/venues.yml), so the label color travels with the fill instead of the theme.
+          color: var(--venue-label-color, var(--global-card-bg-color)) !important;
+
+          div,
+          a {
+            color: inherit;
+          }
 
           a {
-            color: white;
+            text-decoration: none;
 
             &:hover {
               text-decoration: none;
@@ -769,6 +805,7 @@ footer.sticky-bottom {
       .author {
         a {
           border-bottom: 1px dashed var(--global-theme-color);
+          text-decoration: none;
 
           &:hover {
             border-bottom-style: solid;
@@ -794,7 +831,8 @@ footer.sticky-bottom {
       }
 
       .links {
-        a.btn {
+        // Link buttons are <a>; Abs/Bib/Award toggles are <button type="button">. Both share the same look.
+        .btn {
           color: var(--global-text-color);
           border: 1px solid var(--global-text-color);
           padding-left: 1rem;
@@ -808,7 +846,7 @@ footer.sticky-bottom {
             border-color: var(--global-theme-color);
           }
         }
-        a.award.btn {
+        .award.btn {
           border-color: var(--global-highlight-color);
         }
       }
@@ -883,7 +921,7 @@ figure.highlight {
 }
 
 pre {
-  color: var(--global-theme-color);
+  color: var(--global-code-text-color);
   background-color: var(--global-code-bg-color);
   border-radius: 6px;
   padding: 6px 12px;
@@ -898,7 +936,7 @@ pre {
 }
 
 code {
-  color: var(--global-theme-color);
+  color: var(--global-code-text-color);
   background-color: var(--global-code-bg-color);
   border-radius: 3px;
   padding: 3px 3px;

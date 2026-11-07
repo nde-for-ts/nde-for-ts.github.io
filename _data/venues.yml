@@ -1,17 +1,24 @@
+# color: badge fill. label_color: badge text, chosen per fill for at least 4.5:1 in both themes.
 "Review":
   color: "#C9A227"
+  label_color: "#000000"
 
 "Related":
   color: "#6A7C89"
+  label_color: "#000000"
 
 "NDEs":
   color: "#6B5FA0"
+  label_color: "#FFFFFF"
 
 "NODEs":
   color: "#2A4B8D"
+  label_color: "#FFFFFF"
 
 "NCDEs":
   color: "#B23A48"
+  label_color: "#FFFFFF"
 
 "NSDEs":
   color: "#2F8F6F"
+  label_color: "#000000"

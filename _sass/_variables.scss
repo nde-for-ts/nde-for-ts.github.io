@@ -36,6 +36,12 @@ $black-color: #000000 !default;
 
 $code-bg-color-light: rgba($purple-color, 0.05);
 $code-bg-color-dark: #2c3237 !default;
+// The dark accent (#2698ba) reaches only 3.88:1 on the dark code background; code text uses the same hue 8% lighter (5.1:1).
+$code-text-color-dark: #33b0d5 !default;
+
+// Secondary (muted) text. Each value holds 4.5:1 on its theme's page and card backgrounds.
+$muted-text-color-light: #6c757d !default;
+$muted-text-color-dark: #999999 !default;
 
 // Font awesome location
 $fa-font-path: "../webfonts";
