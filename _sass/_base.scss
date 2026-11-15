@@ -67,13 +67,13 @@ article {
 }
 
 // Keyboard focus. MDB resets outlines on .btn, .navbar-toggler and inputs (and .z-depth-0 removes box-shadow with
-// !important), so the ring is an outline marked !important. The theme color is 5.8:1 on light and 5.1:1 on dark.
+// !important), so the ring is an outline marked !important.
 :focus-visible {
   outline: 2px solid var(--global-theme-color) !important;
   outline-offset: 2px;
 }
 
-// Bootstrap's .text-muted is a fixed #6c757d (3.28:1 on the dark card background); route it through the theme token.
+// Route muted text through the theme token in both color modes.
 .text-muted {
   color: var(--global-text-color-light) !important;
 }
@@ -749,7 +749,7 @@ footer.sticky-bottom {
   }
 
   h2.bibliography {
-    // The divider token as text was 1.24:1 (light) and 1.70:1 (dark); the rule above stays a divider.
+    // Use the text token for headings and keep the divider token for borders.
     color: var(--global-text-color-light);
     border-top: 1px solid var(--global-divider-color);
     padding-top: 1rem;

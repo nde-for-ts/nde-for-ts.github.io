@@ -25,18 +25,18 @@ vendor
 *.swp
 *~
 
-# Internal agent workspace files live at ../.claude, not in this site repo.
+# Local agent configuration
 .claude/
 AGENTS.md
 CLAUDE.md
 
-# Local bibliography/Zotero maintenance assets; keep generated site data in source files only.
+# Local bibliography tools and working data
 _scripts/sync_zotero_bibliography.py
 _bibliography/FORMAT.md
 _bibliography/SELECTION_RATIONALE.md
 assets/zotero/
 
-# Private agent configuration, review records, and scratch artifacts.
+# Local configuration and temporary files
 .codex/
 .cursor/
 .gemini/
