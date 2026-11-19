@@ -31,9 +31,9 @@ AGENTS.md
 CLAUDE.md
 
 # Local bibliography tools and working data
-_scripts/sync_zotero_bibliography.py
-_bibliography/FORMAT.md
-_bibliography/SELECTION_RATIONALE.md
+_scripts/*.py
+_bibliography/*.md
+*.pptx
 assets/zotero/
 
 # Local configuration and temporary files

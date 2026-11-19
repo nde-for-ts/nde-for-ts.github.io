@@ -163,8 +163,7 @@ kramdown:
 # Includes & excludes
 include: ["_pages", "_scripts"]
 exclude:
-  - _bibliography/FORMAT.md
-  - _bibliography/SELECTION_RATIONALE.md
+  - _bibliography/*.md
   - .jekyll-cache/
   - Gemfile
   - Gemfile.lock
@@ -173,7 +172,7 @@ exclude:
   - package.json
   - package-lock.json
   - _pages/about_einstein.md
-  - _scripts/sync_zotero_bibliography.py
+  - _scripts/*.py
   - purgecss.config.js
   - README.md
   - readme_preview/
