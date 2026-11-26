@@ -52,7 +52,7 @@ keywords: "neural differential equations, NODE, NCDE, NSDE, time series, continu
       <div class="card h-100 hoverable border">
         <div class="card-body">
           <h3 id="ksc-tutorial-title" class="card-title h4">KSC 2026 Tutorial</h3>
-          <p class="card-text text-muted">Neural differential equations for generative modeling.</p>
+          <p class="card-text text-muted">Continuous-time modeling, irregular observations, and generative models.</p>
         </div>
       </div>
     </a>
@@ -96,15 +96,6 @@ The main NDE families are Neural Ordinary Differential Equations (NODEs), Neural
         <div class="card-body">
           <h4 class="card-title">Papers</h4>
           <p class="card-text text-muted">From the original NODE framework to recent NCDE and NSDE variants, including applications in healthcare, industry, finance, and science.</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col mb-3">
-    <a href="/people/" style="text-decoration: none; color: inherit;">
-      <div class="card h-100 hoverable border">
-        <div class="card-body">
-          <h4 class="card-title">Contributors</h4>
         </div>
       </div>
     </a>

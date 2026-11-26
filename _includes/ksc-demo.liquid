@@ -1,0 +1,26 @@
+{% assign media = '/assets/media/ksc-2026/' | append: include.asset %}
+{% assign video = media | append: '.mp4' | relative_url %}
+{% assign poster = media | append: '-preview.png' | relative_url %}
+<article class="ksc-demo">
+  <h3 id="{{ include.id }}">{{ include.title }}</h3>
+  <div class="ksc-media">
+    <video
+      src="{{ video }}"
+      poster="{{ poster }}"
+      aria-labelledby="{{ include.id }}"
+      data-ksc-video
+      muted
+      playsinline
+      controls
+      preload="none"
+    >
+      <a href="{{ video }}">Open video</a>
+    </video>
+  </div>
+  <p>
+    {{ include.caption | escape }}
+    {% if include.reference -%}
+      <a href="{{ include.reference }}">{{ include.reference_label }}</a>
+    {%- endif %}
+  </p>
+</article>

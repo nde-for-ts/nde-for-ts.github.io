@@ -1,30 +1,31 @@
-document.querySelectorAll("[data-ksc-video]").forEach((link) => {
-  link.addEventListener("click", (event) => {
-    if (event.button !== 0 || event.altKey || event.ctrlKey || event.metaKey || event.shiftKey) return;
+if ("IntersectionObserver" in window) {
+  const videos = document.querySelectorAll("[data-ksc-video]");
+  const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
+  const firstViews = new Set(videos);
+  const resume = new Set();
+  const threshold = 0.55;
 
-    const screen = link.closest(".ksc-demo").querySelector("[data-ksc-screen]");
-    const poster = screen.querySelector("img");
-    const video = document.createElement("video");
-    if (!video.canPlayType("video/mp4")) return;
+  const observer = new IntersectionObserver(
+    (entries) => {
+      entries.forEach(({ target: video, intersectionRatio }) => {
+        if (intersectionRatio < threshold) {
+          if (!video.paused && !video.ended) {
+            if (!reducedMotion.matches) resume.add(video);
+            video.pause();
+          }
+          return;
+        }
 
-    event.preventDefault();
-    video.src = link.href;
-    video.poster = poster.src;
-    video.width = poster.width;
-    video.height = poster.height;
-    video.controls = true;
-    video.playsInline = true;
-    video.preload = "metadata";
-    video.setAttribute("aria-label", link.getAttribute("aria-label"));
-    video.addEventListener("play", () => {
-      document.querySelectorAll(".ksc-demo video").forEach((other) => {
-        if (other !== video) other.pause();
+        if (reducedMotion.matches) return;
+        const firstView = firstViews.delete(video) && video.currentTime === 0;
+        const wasPlaying = resume.delete(video);
+        if ((firstView || wasPlaying) && video.paused && !video.ended) {
+          video.play().catch(() => {});
+        }
       });
-    });
+    },
+    { threshold }
+  );
 
-    link.hidden = true;
-    poster.replaceWith(video);
-    video.focus();
-    video.play().catch(() => {});
-  });
-});
+  videos.forEach((video) => observer.observe(video));
+}
