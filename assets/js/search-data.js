@@ -9,7 +9,14 @@ ninja.data = [{
     handler: () => {
       window.location.href = "/";
     },
-  },{id: "nav-tutorial",
+  },{id: "nav-a-practical-guide-to-neural-differential-equations",
+          title: "A Practical Guide to Neural Differential Equations",
+          description: "A KSC 2026 tutorial on continuous-time deep learning, irregular observations, and generative modeling.",
+          section: "Navigation",
+          handler: () => {
+            window.location.href = "/ksc-2026/";
+          },
+        },{id: "nav-tutorial",
           title: "Tutorial",
           description: "Theory and practice of neural differential equations for time series analysis.",
           section: "Navigation",
