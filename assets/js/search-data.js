@@ -11,21 +11,21 @@ ninja.data = [{
     },
   },{id: "nav-a-practical-guide-to-neural-differential-equations",
           title: "A Practical Guide to Neural Differential Equations",
-          description: "A KSC 2026 tutorial on continuous-time deep learning, irregular observations, and generative modeling.",
+          description: "A KSC 2026 tutorial with eight demos on neural ODEs, CDEs, SDEs, irregular observations, and continuous-time generative modeling.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/ksc-2026/";
           },
         },{id: "nav-tutorial",
           title: "Tutorial",
-          description: "Theory and practice of neural differential equations for time series analysis.",
+          description: "CIKM 2025 tutorial on neural ODEs, CDEs, and SDEs for continuous-time analysis of irregular time series, with examples and code.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/cikm-2025/";
           },
         },{id: "nav-review",
           title: "Review",
-          description: "An IJCAI survey of neural differential equations for time series analysis.",
+          description: "IJCAI 2025 survey of neural ODEs, CDEs, and SDEs for time series, covering theory, numerical methods, and benchmarks.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/ijcai-2025/";
