@@ -1,5 +1,11 @@
 {% assign page_description = page.description | default: site.description %}
-{% capture document_title %}{% if page.url == '/' or page.title == blank or page.title == 'blank' %}{{ site.title }}{% else %}{{ page.title }} | {{ site.title }}{% endif %}{% endcapture %}
+{% if page.seo_title %}
+  {% assign document_title = page.seo_title %}
+{% elsif page.url == '/' or page.title == blank or page.title == 'blank' %}
+  {% assign document_title = site.title %}
+{% else %}
+  {% capture document_title %}{{ page.title }} | {{ site.title }}{% endcapture %}
+{% endif %}
 {% assign canonical_url = page.url | replace: 'index.html', '' | absolute_url %}
 {% assign website_id = '/' | absolute_url | append: '#website' %}
 {% assign page_id = canonical_url | append: '#webpage' %}
@@ -31,14 +37,17 @@
   <meta property="og:title" content="{{ document_title | strip | escape }}">
   <meta property="og:url" content="{{ canonical_url }}">
   <meta property="og:description" content="{{ page_description | escape }}">
-  <meta property="og:locale" content="{{ site.lang }}">
-  <meta name="twitter:card" content="summary">
+  <meta property="og:locale" content="{{ site.og_locale | escape }}">
+  {% assign sharing_image = page.og_image | default: site.og_image %}
+  <meta name="twitter:card" content="{% if sharing_image %}summary_large_image{% else %}summary{% endif %}">
   <meta name="twitter:title" content="{{ document_title | strip | escape }}">
   <meta name="twitter:description" content="{{ page_description | escape }}">
-  {% assign sharing_image = page.og_image | default: site.og_image %}
   {% if sharing_image %}
+    {% assign sharing_image_alt = page.og_image_alt | default: site.og_image_alt %}
     <meta property="og:image" content="{{ sharing_image | absolute_url }}">
+    <meta property="og:image:alt" content="{{ sharing_image_alt | escape }}">
     <meta name="twitter:image" content="{{ sharing_image | absolute_url }}">
+    <meta name="twitter:image:alt" content="{{ sharing_image_alt | escape }}">
   {% endif %}
 {% endif %}
 

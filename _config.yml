@@ -61,7 +61,9 @@ max_width: 930px
 # see https://schema.org/docs/faq.html for more information
 serve_og_meta: true # Include Open Graph meta tags in the HTML head
 serve_schema_org: true # Include Schema.org in the HTML head
-og_image: # Set only when a site-specific sharing image is available.
+og_locale: en_US
+og_image: /assets/img/nde-social-card.png
+og_image_alt: "Neural Differential Equations. A median forecast and an 80% prediction interval are shown."
 
 # -----------------------------------------------------------------------------
 # Analytics and search engine verification

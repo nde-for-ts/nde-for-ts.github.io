@@ -2,7 +2,8 @@
 layout: about
 permalink: /ijcai-2025/
 title: Review
-description: "An IJCAI survey of neural differential equations for time series analysis."
+seo_title: "Neural Differential Equations for Time Series (IJCAI 2025 Review)"
+description: "IJCAI 2025 survey of neural ODEs, CDEs, and SDEs for time series, covering theory, numerical methods, and benchmarks."
 keywords: "neural differential equations, NODE, NCDE, NSDE, time series survey, IJCAI 2025, continuous-time modeling, NDE review"
 nav: true
 nav_order: 2

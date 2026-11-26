@@ -2,6 +2,7 @@
 layout: about
 permalink: /
 title: About
+seo_title: Neural Differential Equations | NDE for Temporal Systems
 keywords: "neural differential equations, NODE, NCDE, NSDE, continuous-time dynamics, irregular time series, generative modeling"
 ---
 
