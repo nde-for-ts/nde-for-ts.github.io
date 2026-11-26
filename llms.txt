@@ -8,9 +8,10 @@ Neural differential equations model continuous-time dynamics. This site covers n
 
 
 - [About](https://nde-for-ts.github.io/): Neural differential equations for time series: surveys, tutorials, and code.
+- [Neural Differential Equations for Generative Modeling](https://nde-for-ts.github.io/ksc-2026/): How do continuous-time models turn noise into new samples?
+- [Tutorial](https://nde-for-ts.github.io/cikm-2025/): Theory and practice of neural differential equations for time series analysis.
+- [Review](https://nde-for-ts.github.io/ijcai-2025/): An IJCAI survey of neural differential equations for time series analysis.
 - [Papers](https://nde-for-ts.github.io/papers/): Research papers on neural differential equations for time series analysis.
-- [Review](https://nde-for-ts.github.io/review/): An IJCAI survey of neural differential equations for time series analysis.
-- [Tutorial](https://nde-for-ts.github.io/tutorial/): Theory and practice of neural differential equations for time series analysis.
 - [Contributors](https://nde-for-ts.github.io/people/): Researchers contributing to neural differential equations for time series.
 
 ## Related resources

@@ -14,14 +14,14 @@ ninja.data = [{
           description: "Theory and practice of neural differential equations for time series analysis.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/tutorial/";
+            window.location.href = "/cikm-2025/";
           },
         },{id: "nav-review",
           title: "Review",
           description: "An IJCAI survey of neural differential equations for time series analysis.",
           section: "Navigation",
           handler: () => {
-            window.location.href = "/review/";
+            window.location.href = "/ijcai-2025/";
           },
         },{id: "nav-papers",
           title: "Papers",

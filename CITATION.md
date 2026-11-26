@@ -42,7 +42,7 @@ Preprint version:
 
 **Neural Differential Equations for Continuous-Time Analysis** — YongKyung Oh, Dong-Young Lim, and Sungil Kim. _Proceedings of the 34th ACM International Conference on Information and Knowledge Management (CIKM '25)_, pp. 6837–6840, 2025.
 
-- Tutorial and materials: <https://nde-for-ts.github.io/tutorial/>
+- Tutorial and materials: <https://nde-for-ts.github.io/cikm-2025/>
 - Paper (DOI): <https://doi.org/10.1145/3746252.3761447>
 
 ```bibtex
