@@ -2,6 +2,9 @@
 {% assign video = media | append: '.mp4' | relative_url %}
 {% assign poster = media | append: '-preview.png' | relative_url %}
 <article class="ksc-demo">
+  <p class="ksc-demo-model">
+    <span>{{ include.number }}</span>{{ include.model }}
+  </p>
   <h3 id="{{ include.id }}">{{ include.title }}</h3>
   <div class="ksc-media">
     <video
@@ -18,10 +21,10 @@
       <a href="{{ video }}">Open video</a>
     </video>
   </div>
-  <p>
-    {{ include.caption | escape }}
-    {% if include.reference -%}
+  <p class="ksc-result">{{ include.caption | escape }}</p>
+  {% if include.reference %}
+    <p class="ksc-reference">
       <a href="{{ include.reference }}">{{ include.reference_label }}</a>
-    {%- endif %}
-  </p>
+    </p>
+  {% endif %}
 </article>
