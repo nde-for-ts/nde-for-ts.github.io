@@ -1,0 +1,17 @@
+<!doctype html>
+<html lang="{{ site.lang }}">
+  {% assign destination = page.destination | relative_url %}
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{{ page.title | escape }}</title>
+    <link rel="canonical" href="{{ page.destination | absolute_url }}" />
+    <script>
+      window.location.replace({{ destination | jsonify }} + window.location.search + window.location.hash);
+    </script>
+    <noscript><meta http-equiv="refresh" content="0; url={{ destination }}" /></noscript>
+  </head>
+  <body>
+    <p><a href="{{ destination }}">{{ page.title | escape }}</a></p>
+  </body>
+</html>

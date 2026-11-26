@@ -44,6 +44,33 @@ keywords: "neural differential equations, NODE, NCDE, NSDE, time series, continu
 
 ---
 
+## Tutorials
+
+<div class="row row-cols-1 row-cols-md-2 g-3">
+  <div class="col mb-3">
+    <a href="{{ '/ksc-2026/' | relative_url }}" aria-labelledby="ksc-tutorial-title" style="text-decoration: none; color: inherit;">
+      <div class="card h-100 hoverable border">
+        <div class="card-body">
+          <h3 id="ksc-tutorial-title" class="card-title h4">KSC 2026 Tutorial</h3>
+          <p class="card-text text-muted">Neural differential equations for generative modeling.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+  <div class="col mb-3">
+    <a href="{{ '/cikm-2025/' | relative_url }}" aria-labelledby="cikm-tutorial-title" style="text-decoration: none; color: inherit;">
+      <div class="card h-100 hoverable border">
+        <div class="card-body">
+          <h3 id="cikm-tutorial-title" class="card-title h4">CIKM 2025 Tutorial</h3>
+          <p class="card-text text-muted">Neural differential equations for irregular time series.</p>
+        </div>
+      </div>
+    </a>
+  </div>
+</div>
+
+---
+
 ## Overview
 
 Time series are often sampled at non-uniform intervals, and observations can contain gaps or noise. Neural Differential Equations (NDEs) model such data in continuous time, which lets them handle uneven sampling and missing values. Their continuous latent dynamics complement discrete-step sequence models, and domain knowledge can be built into the structure of the differential equation.
@@ -54,17 +81,7 @@ The main NDE families are Neural Ordinary Differential Equations (NODEs), Neural
 
 <div class="row row-cols-1 row-cols-md-2 g-3">
   <div class="col mb-3">
-    <a href="/tutorial/" style="text-decoration: none; color: inherit;">
-      <div class="card h-100 hoverable border">
-        <div class="card-body">
-          <h4 class="card-title">CIKM 2025 Tutorial</h4>
-          <p class="card-text text-muted">Mathematical foundations and hands-on implementation, with attention to robustness and stability.</p>
-        </div>
-      </div>
-    </a>
-  </div>
-  <div class="col mb-3">
-    <a href="/review/" style="text-decoration: none; color: inherit;">
+    <a href="{{ '/ijcai-2025/' | relative_url }}" style="text-decoration: none; color: inherit;">
       <div class="card h-100 hoverable border">
         <div class="card-body">
           <h4 class="card-title">IJCAI 2025 Review</h4>

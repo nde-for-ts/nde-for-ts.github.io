@@ -11,7 +11,7 @@ Neural differential equations model continuous-time dynamics. This site covers n
 
 ## Pages
 
-{% assign discovery_paths = '/,/papers/,/review/,/tutorial/,/people/' | split: ',' %}
+{% assign discovery_paths = '/,/ksc-2026/,/cikm-2025/,/ijcai-2025/,/papers/,/people/' | split: ',' %}
 {% for discovery_path in discovery_paths %}{% assign resource = site.pages | where: 'url', discovery_path | first %}{% if resource %}- [{{ resource.title }}]({{ resource.url | absolute_url }}): {{ resource.description }}
 {% endif %}{% endfor %}
 ## Related resources

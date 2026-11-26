@@ -1,6 +1,6 @@
 ---
 layout: about
-permalink: /review/
+permalink: /ijcai-2025/
 title: Review
 description: "An IJCAI survey of neural differential equations for time series analysis."
 keywords: "neural differential equations, NODE, NCDE, NSDE, time series survey, IJCAI 2025, continuous-time modeling, NDE review"
@@ -16,7 +16,7 @@ nav_order: 2
   "headline": "Comprehensive Review of Neural Differential Equations for Time Series Analysis",
   "name": "Comprehensive Review of Neural Differential Equations for Time Series Analysis",
   "about": "Neural Differential Equations (NODE, NCDE, NSDE) for time series analysis",
-  "url": "https://nde-for-ts.github.io/review/",
+  "url": "https://nde-for-ts.github.io/ijcai-2025/",
   "sameAs": ["https://arxiv.org/abs/2502.09885"],
   "identifier": {
     "@type": "PropertyValue",
