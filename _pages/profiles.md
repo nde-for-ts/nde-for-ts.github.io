@@ -3,7 +3,7 @@ layout: profiles
 permalink: /people/
 title: Contributors
 description: "Researchers contributing to neural differential equations for time series."
-keywords: "NDE for TS contributors, neural differential equations researchers, YongKyung Oh, Dong-Young Lim, Sungil Kim, Pusan National University, UCLA, UNIST"
+keywords: "NDE for Temporal Systems contributors, neural differential equations researchers, YongKyung Oh, Dong-Young Lim, Sungil Kim, Pusan National University, UCLA, UNIST"
 nav: true
 nav_order: 4
 show_description: false

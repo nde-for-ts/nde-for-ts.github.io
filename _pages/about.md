@@ -2,8 +2,7 @@
 layout: about
 permalink: /
 title: About
-description: "Neural differential equations for time series: surveys, tutorials, and code."
-keywords: "neural differential equations, NODE, NCDE, NSDE, time series, continuous-time deep learning, irregular time series, NDE for TS"
+keywords: "neural differential equations, NODE, NCDE, NSDE, continuous-time dynamics, irregular time series, generative modeling"
 ---
 
 <script type="application/ld+json">
@@ -13,22 +12,22 @@ keywords: "neural differential equations, NODE, NCDE, NSDE, time series, continu
     {
       "@type": "WebSite",
       "@id": "https://nde-for-ts.github.io/#website",
-      "name": "NDE for TS",
+      "name": {{ site.title | jsonify }},
       "url": "https://nde-for-ts.github.io/",
-      "description": "Hub for Neural Differential Equations (NODE, NCDE, NSDE) applied to time series analysis — tutorials, surveys, curated papers, and open-source code.",
+      "description": {{ site.description | jsonify }},
       "inLanguage": "en"
     },
     {
       "@type": "CollectionPage",
       "@id": "https://nde-for-ts.github.io/#hub",
-      "name": "NDE for TS — Neural Differential Equations for Time Series",
+      "name": {{ site.title | jsonify }},
       "url": "https://nde-for-ts.github.io/",
-      "description": "A curated topic hub covering Neural Ordinary Differential Equations (NODEs), Neural Controlled Differential Equations (NCDEs), and Neural Stochastic Differential Equations (NSDEs) for continuous-time time series modeling.",
+      "description": "Tutorials and research on neural ordinary, controlled, and stochastic differential equations.",
       "inLanguage": "en",
       "isPartOf": { "@id": "https://nde-for-ts.github.io/#website" },
       "about": {
         "@type": "Thing",
-        "name": "Neural Differential Equations for Time Series"
+        "name": "Neural differential equations"
       },
       "maintainer": {
         "@type": "Person",
@@ -40,7 +39,9 @@ keywords: "neural differential equations, NODE, NCDE, NSDE, time series, continu
 }
 </script>
 
-# **Neural Differential Equations for Time Series**
+## Overview
+
+Neural differential equations model how systems evolve in continuous time. The tutorials cover neural ODEs, CDEs, and SDEs through examples of irregularly observed data, physical dynamics, and generative modeling.
 
 ---
 
@@ -71,30 +72,24 @@ keywords: "neural differential equations, NODE, NCDE, NSDE, time series, continu
 
 ---
 
-## Overview
-
-Time series are often sampled at non-uniform intervals, and observations can contain gaps or noise. Neural Differential Equations (NDEs) model such data in continuous time, which lets them handle uneven sampling and missing values. Their continuous latent dynamics complement discrete-step sequence models, and domain knowledge can be built into the structure of the differential equation.
-
-The main NDE families are Neural Ordinary Differential Equations (NODEs), Neural Controlled Differential Equations (NCDEs), and Neural Stochastic Differential Equations (NSDEs). Code examples use PyTorch, `torchcde`, and `torchsde` for tasks such as interpolation, representation learning, and classification.
-
----
+## Literature
 
 <div class="row row-cols-1 row-cols-md-2 g-3">
   <div class="col mb-3">
-    <a href="{{ '/ijcai-2025/' | relative_url }}" style="text-decoration: none; color: inherit;">
+    <a href="{{ '/ijcai-2025/' | relative_url }}" aria-labelledby="ijcai-review-title" style="text-decoration: none; color: inherit;">
       <div class="card h-100 hoverable border">
         <div class="card-body">
-          <h4 class="card-title">IJCAI 2025 Review</h4>
+          <h3 id="ijcai-review-title" class="card-title h4">IJCAI 2025 Review</h3>
           <p class="card-text text-muted">Theory and benchmark results for NODEs, NCDEs, and NSDEs.</p>
         </div>
       </div>
     </a>
   </div>
   <div class="col mb-3">
-    <a href="/papers/" style="text-decoration: none; color: inherit;">
+    <a href="{{ '/papers/' | relative_url }}" aria-labelledby="papers-title" style="text-decoration: none; color: inherit;">
       <div class="card h-100 hoverable border">
         <div class="card-body">
-          <h4 class="card-title">Papers</h4>
+          <h3 id="papers-title" class="card-title h4">Papers</h3>
           <p class="card-text text-muted">From the original NODE framework to recent NCDE and NSDE variants, including applications in healthcare, industry, finance, and science.</p>
         </div>
       </div>

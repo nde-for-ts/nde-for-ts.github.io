@@ -1,10 +1,10 @@
-# NDE for TS
+# NDE for Temporal Systems
 
 [Website](https://nde-for-ts.github.io/)
 
-Resources on Neural Differential Equations for time series: Neural Ordinary Differential Equations (NODEs), Neural Controlled Differential Equations (NCDEs), and Neural Stochastic Differential Equations (NSDEs).
+Tutorials, reviews, and papers on neural differential equations for continuous-time dynamics, irregular observations, and generative modeling.
 
-- [KSC 2026 Tutorial](https://nde-for-ts.github.io/ksc-2026/): neural differential equations for generative modeling.
+- [KSC 2026 Tutorial](https://nde-for-ts.github.io/ksc-2026/): A Practical Guide to Neural Differential Equations.
 - [CIKM 2025 Tutorial](https://nde-for-ts.github.io/cikm-2025/): the CIKM 2025 tutorial, from mathematical foundations to practical examples.
 - [IJCAI 2025 Review](https://nde-for-ts.github.io/ijcai-2025/): the IJCAI-25 survey of NDE formulations, theory, numerical methods, and benchmarks.
 - [Papers](https://nde-for-ts.github.io/papers/): a curated bibliography of NDE research.

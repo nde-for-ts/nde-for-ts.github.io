@@ -14,14 +14,14 @@ show_description: false
   "@context": "https://schema.org",
   "@type": "CollectionPage",
   "@id": "https://nde-for-ts.github.io/papers/",
-  "name": "NDE Papers — NDE for TS",
+  "name": {{ site.title | prepend: "Papers | " | jsonify }},
   "url": "https://nde-for-ts.github.io/papers/",
   "description": "A curated bibliography of papers on Neural Differential Equations (NODE, NCDE, NSDE) for time series analysis.",
   "about": "Neural Differential Equations for time series analysis",
   "inLanguage": "en",
   "isPartOf": {
     "@type": "WebSite",
-    "name": "NDE for TS",
+    "name": {{ site.title | jsonify }},
     "url": "https://nde-for-ts.github.io/"
   },
   "maintainer": {

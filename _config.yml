@@ -2,12 +2,12 @@
 # Site settings
 # -----------------------------------------------------------------------------
 
-title: NDE for TS # the website title (if blank, full name will be used instead)
-first_name: NDE for TS
+title: NDE for Temporal Systems # the website title (if blank, full name will be used instead)
+first_name: NDE for Temporal Systems
 middle_name:
 last_name:
 contact_note:
-description: "Neural differential equations for time series: surveys, tutorials, and code."
+description: "Tutorials, reviews, and papers on neural differential equations for continuous-time dynamics, irregular observations, and generative modeling."
 footer_text:
 
 keywords: "Neural Differential Equations, Time Series, Deep Learning, Tutorial, NODE, NCDE, NSDE, Machine Learning, Neural ODE, Neural CDE, Neural SDE, continuous-time, irregular time series" # add your own keywords or leave empty
@@ -84,7 +84,7 @@ bing_site_verification: # out your bing-site-verification ID (Bing Webmaster)
 # Blog
 # -----------------------------------------------------------------------------
 
-blog_name: NDE for TS
+blog_name: NDE for Temporal Systems
 blog_description: Neural Differential Equations for Continuous-Time Analysis
 permalink: /blog/:year/:title/
 lsi: false # produce an index for related posts
