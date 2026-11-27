@@ -11,7 +11,7 @@ ninja.data = [{
     },
   },{id: "nav-a-practical-guide-to-neural-differential-equations",
           title: "A Practical Guide to Neural Differential Equations",
-          description: "A KSC 2026 tutorial with fifteen demos on neural ODEs, CDEs, SDEs, irregular observations, and continuous-time generative modeling.",
+          description: "A KSC 2026 tutorial with eight demos on neural ODEs, CDEs, SDEs, irregular observations, and continuous-time generative modeling.",
           section: "Navigation",
           handler: () => {
             window.location.href = "/ksc-2026/";
