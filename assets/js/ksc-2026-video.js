@@ -1,16 +1,3 @@
-const moreDemos = document.querySelector(".ksc-more");
-
-function revealLinkedDemo() {
-  const target = document.getElementById(window.location.hash.slice(1));
-  if (target && moreDemos && moreDemos.contains(target)) {
-    moreDemos.open = true;
-    requestAnimationFrame(() => target.scrollIntoView());
-  }
-}
-
-revealLinkedDemo();
-window.addEventListener("hashchange", revealLinkedDemo);
-
 if ("IntersectionObserver" in window) {
   const videos = document.querySelectorAll("[data-ksc-video]");
   const reducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)");
@@ -21,7 +8,7 @@ if ("IntersectionObserver" in window) {
   const observer = new IntersectionObserver(
     (entries) => {
       entries.forEach(({ target: video, intersectionRatio }) => {
-        if (intersectionRatio < threshold || video.closest("details:not([open])")) {
+        if (intersectionRatio < threshold) {
           if (!video.paused && !video.ended) {
             if (!reducedMotion.matches) resume.add(video);
             video.pause();
